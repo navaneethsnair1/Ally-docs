@@ -1,0 +1,52 @@
+{
+    "counts": {
+        "ignored": 0,
+        "violation": 13,
+        "recommendation": 10,
+        "pass": 0,
+        "potentialviolation": 11,
+        "potentialrecommendation": 23,
+        "manual": 6,
+        "elements": 48,
+        "elementsViolation": 13,
+        "elementsViolationReview": 19
+    },
+    "startReport": 1726641645533,
+    "endReport": 1726641653307,
+    "toolID": "cypress-accessibility-checker-v3.1.71",
+    "policies": [
+        "IBM_Accessibility"
+    ],
+    "reportLevels": [
+        "violation",
+        "potentialviolation",
+        "recommendation",
+        "potentialrecommendation",
+        "manual"
+    ],
+    "labels": [
+        "master"
+    ],
+    "failLevels": [
+        "violation",
+        "potentialviolation"
+    ],
+    "scanID": "7e21bcf6-ff71-44a4-bffd-4b71254009fa",
+    "pageScanSummary": [
+        {
+            "label": "./JAVA/8/java_index1",
+            "counts": {
+                "violation": 13,
+                "potentialviolation": 11,
+                "recommendation": 10,
+                "potentialrecommendation": 23,
+                "manual": 6,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 48,
+                "elementsViolation": 13,
+                "elementsViolationReview": 19
+            }
+        }
+    ]
+}

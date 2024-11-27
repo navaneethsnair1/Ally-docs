@@ -1,0 +1,60 @@
+name: Docs Accessibility Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+ 
+jobs:
+  openliberty-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Run first test file
+        run: cypress run --browser chrome --config-file /__w/Ally-docs/Ally-docs/cypress-docs/cypress.config.js --spec "/__w/Ally-docs/Ally-docs/cypress-docs/cypress/e2e/ol_api.cy.js"
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+            name: cypress-screenshots
+            path: /__w/Ally-docs/Ally-docs/cypress-docs/cypress/screenshots/ol_api.cy.js
+      
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+            name: cypress-videos
+            path: /__w/Ally-docs/Ally-docs/cypress-docs/cypress/videos/ol_api.cy.js
+  # trial:
+  #   runs-on: ubuntu-latest
+  #   container: cypress/included:12.5.1
+  #   steps: 
+  #     - uses: actions/checkout@v3.3.0
+  #     - run: cypress run --browser chrome --env JDK_VERSION="${{ inputs.java_version }}"  --config-file /__w/openliberty.io/openliberty.io/src/test/cypressjs/cypress.config.js --spec /__w/openliberty.io/openliberty.io/src/test/cypressjs/cypress/e2e/testFeatureVersions.cy.js
+      
+  #     - uses: actions/upload-artifact@v3
+  #       if: failure()
+  #       with:
+  #           name: cypress-screenshots
+  #           path: /__w/openliberty.io/openliberty.io/cypress/screenshots/testFeatureVersions.cy.js
+
+  #     - uses: actions/upload-artifact@v3
+  #       if: failure()
+  #       with:
+  #           name: cypress-videos
+  #           path: /__w/openliberty.io/openliberty.io/cypress/videos/testFeatureVersions.cy.js.mp4      
+  # openliberty-spi:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v3
+  #     - name: Set up Node.js
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 16
+  #     - name: Install dependencies
+  #       run: npm install
+  #     - name: Run second test file
+  #       run: npx cypress run --spec "../cypress/e2e/ol_spi.cy.js"
+
+

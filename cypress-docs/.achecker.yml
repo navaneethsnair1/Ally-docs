@@ -1,0 +1,20 @@
+ruleArchive: latest
+policies:
+  - IBM_Accessibility
+failLevels:
+  - violation
+  - potentialviolation
+reportLevels:
+  - violation
+  - potentialviolation
+  - recommendation
+  - potentialrecommendation
+  - manual
+outputFormat:
+  - json
+label:
+  - master
+outputFilenameTimestamp: true
+baselineFolder: test/baselines
+cacheFolder: /tmp/accessibility-checker
+outputFolder: results/OL_API

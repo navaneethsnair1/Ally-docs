@@ -1,0 +1,2723 @@
+{
+    "results": [
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/head[1]/link[2]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 3,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<link rel=\"stylesheet\" integrity=\"sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css\" crossorigin=\"anonymous\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Clink%20rel%3D%5C%22stylesheet%5C%22%20integrity%3D%5C%22sha384-HSMxcRTRxnN%2BBdg0JdbxYKrThecOKuH5zCYotlSAcp1%2Bc8xmyTe9GYg1l9a69psu%5C%22%20href%3D%5C%22https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fbootstrap%403.4.1%2Fdist%2Fcss%2Fbootstrap.min.css%5C%22%20crossorigin%3D%5C%22anonymous%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_highcontrast_visible",
+            "value": [
+                "VIOLATION",
+                "MANUAL"
+            ],
+            "path": {
+                "dom": "/html[1]/head[1]/link[2]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Manual_1",
+            "message": "Confirm Windows high contrast mode is supported when using CSS to include, position or alter non-decorative content",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<link rel=\"stylesheet\" integrity=\"sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css\" crossorigin=\"anonymous\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "manual",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/style_highcontrast_visible.html#%7B%22message%22%3A%22Confirm%20Windows%20high%20contrast%20mode%20is%20supported%20when%20using%20CSS%20to%20include%2C%20position%20or%20alter%20non-decorative%20content%22%2C%22snippet%22%3A%22%3Clink%20rel%3D%5C%22stylesheet%5C%22%20integrity%3D%5C%22sha384-HSMxcRTRxnN%2BBdg0JdbxYKrThecOKuH5zCYotlSAcp1%2Bc8xmyTe9GYg1l9a69psu%5C%22%20href%3D%5C%22https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fbootstrap%403.4.1%2Fdist%2Fcss%2Fbootstrap.min.css%5C%22%20crossorigin%3D%5C%22anonymous%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22MANUAL%22%5D%2C%22reasonId%22%3A%22Manual_1%22%2C%22ruleId%22%3A%22style_highcontrast_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_main_label_visible",
+            "value": [
+                "RECOMMENDATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Multiple elements with \"main\" role do not have unique visible labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1320,
+                "width": 2000
+            },
+            "snippet": "<body class=\"article\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "recommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/aria_main_label_visible.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22main%5C%22%20role%20do%20not%20have%20unique%20visible%20labels%22%2C%22snippet%22%3A%22%3Cbody%20class%3D%5C%22article%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_main_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_banner_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]",
+                "aria": "/document[1]/banner[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Multiple elements with \"banner\" role do not have unique labels",
+            "messageArgs": [
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 120,
+                "width": 2000
+            },
+            "snippet": "<header>",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "violation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/aria_banner_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22banner%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cheader%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_banner_label_unique%22%2C%22msgArgs%22%3A%5B%22%22%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_background",
+            "value": [
+                "RECOMMENDATION",
+                "MANUAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/nav[1]",
+                "aria": "/document[1]/banner[1]/navigation[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Manual_1",
+            "message": "Verify important background image information has a text alternative in system high contrast mode",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 120,
+                "width": 2000
+            },
+            "snippet": "<nav id=\"nav_bar\" aria-label=\"Navigation header links\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "manual",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/img_alt_background.html#%7B%22message%22%3A%22Verify%20important%20background%20image%20information%20has%20a%20text%20alternative%20in%20system%20high%20contrast%20mode%22%2C%22snippet%22%3A%22%3Cnav%20id%3D%5C%22nav_bar%5C%22%20aria-label%3D%5C%22Navigation%20header%20links%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22MANUAL%22%5D%2C%22reasonId%22%3A%22Manual_1%22%2C%22ruleId%22%3A%22img_alt_background%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/nav[1]/div[1]/a[1]",
+                "aria": "/document[1]/banner[1]/navigation[1]/link[1]"
+            },
+            "ruleTime": 3,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 334,
+                "top": 20,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a id=\"home_link\" href=\"/\" aria-label=\"Open Liberty Home\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20id%3D%5C%22home_link%5C%22%20href%3D%5C%22%2F%5C%22%20aria-label%3D%5C%22Open%20Liberty%20Home%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_role_redundant",
+            "value": [
+                "RECOMMENDATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]",
+                "aria": "/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_redundant",
+            "message": "The explicitly-assigned ARIA role \"main\" is redundant with the implicit role of the element <main>",
+            "messageArgs": [
+                "main",
+                "main"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 120,
+                "height": 2090,
+                "width": 2000
+            },
+            "snippet": "<main role=\"main\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "recommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/aria_role_redundant.html#%7B%22message%22%3A%22The%20explicitly-assigned%20ARIA%20role%20%5C%22main%5C%22%20is%20redundant%20with%20the%20implicit%20role%20of%20the%20element%20%3Cmain%3E%22%2C%22snippet%22%3A%22%3Cmain%20role%3D%5C%22main%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_redundant%22%2C%22ruleId%22%3A%22aria_role_redundant%22%2C%22msgArgs%22%3A%5B%22main%22%2C%22main%22%5D%7D"
+        },
+        {
+            "ruleId": "style_focus_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/navigation[1]/button[1]"
+            },
+            "ruleTime": 4,
+            "reasonId": "potential_focus_not_visible",
+            "message": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 120,
+                "height": 90,
+                "width": 90
+            },
+            "snippet": "<button class=\"nav-toggle\" aria-label=\"Toggle the navigation menu\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22nav-toggle%5C%22%20aria-label%3D%5C%22Toggle%20the%20navigation%20menu%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/navigation[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 120,
+                "height": 90,
+                "width": 90
+            },
+            "snippet": "<button class=\"nav-toggle\" aria-label=\"Toggle the navigation menu\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22nav-toggle%5C%22%20aria-label%3D%5C%22Toggle%20the%20navigation%20menu%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "label_name_visible",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/navigation[1]/button[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Fail_1",
+            "message": "Accessible name does not match or contain the visible label text",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 120,
+                "height": 90,
+                "width": 90
+            },
+            "snippet": "<button class=\"nav-toggle\" aria-label=\"Toggle the navigation menu\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "violation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/label_name_visible.html#%7B%22message%22%3A%22Accessible%20name%20does%20not%20match%20or%20contain%20the%20visible%20label%20text%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22nav-toggle%5C%22%20aria-label%3D%5C%22Toggle%20the%20navigation%20menu%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22label_name_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_attribute_deprecated",
+            "value": [
+                "RECOMMENDATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]",
+                "aria": "/document[1]/main[1]/article[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_elem_attr",
+            "message": "The HTML attribute(s) \"frameborder\" is deprecated for the <iframe> element in HTML 5",
+            "messageArgs": [
+                "frameborder",
+                "iframe"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 393,
+                "height": 1854,
+                "width": 1784
+            },
+            "snippet": "<iframe title=\"MicroProfile 6.1 application programming interface\" style=\"width: 100%;\" src=\"/docs/modules/reference/microprofile-6.1-javadoc/index-all.html\" id=\"javadoc_container\" frameborder=\"0\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "recommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/element_attribute_deprecated.html#%7B%22message%22%3A%22The%20HTML%20attribute(s)%20%5C%22frameborder%5C%22%20is%20deprecated%20for%20the%20%3Ciframe%3E%20element%20in%20HTML%205%22%2C%22snippet%22%3A%22%3Ciframe%20title%3D%5C%22MicroProfile%206.1%20application%20programming%20interface%5C%22%20style%3D%5C%22width%3A%20100%25%3B%5C%22%20src%3D%5C%22%2Fdocs%2Fmodules%2Freference%2Fmicroprofile-6.1-javadoc%2Findex-all.html%5C%22%20id%3D%5C%22javadoc_container%5C%22%20frameborder%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_elem_attr%22%2C%22ruleId%22%3A%22element_attribute_deprecated%22%2C%22msgArgs%22%3A%5B%22frameborder%22%2C%22iframe%22%5D%7D"
+        },
+        {
+            "ruleId": "element_attribute_deprecated",
+            "value": [
+                "RECOMMENDATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/head[1]/meta[2]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_elem_attr",
+            "message": "The HTML attribute(s) \"http-equiv\" is deprecated for the <meta> element in HTML 5",
+            "messageArgs": [
+                "http-equiv",
+                "meta"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<meta content=\"text/html; charset=utf-8\" http-equiv=\"Content-Type\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "recommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/element_attribute_deprecated.html#%7B%22message%22%3A%22The%20HTML%20attribute(s)%20%5C%22http-equiv%5C%22%20is%20deprecated%20for%20the%20%3Cmeta%3E%20element%20in%20HTML%205%22%2C%22snippet%22%3A%22%3Cmeta%20content%3D%5C%22text%2Fhtml%3B%20charset%3Dutf-8%5C%22%20http-equiv%3D%5C%22Content-Type%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_elem_attr%22%2C%22ruleId%22%3A%22element_attribute_deprecated%22%2C%22msgArgs%22%3A%5B%22http-equiv%22%2C%22meta%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_main_label_visible",
+            "value": [
+                "RECOMMENDATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Multiple elements with \"main\" role do not have unique visible labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 0,
+                "width": 1784
+            },
+            "snippet": "<body class=\"index-page\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "recommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/aria_main_label_visible.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22main%5C%22%20role%20do%20not%20have%20unique%20visible%20labels%22%2C%22snippet%22%3A%22%3Cbody%20class%3D%5C%22index-page%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_main_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_role_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/header[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/banner[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The ARIA role 'banner' is not valid for the element <header>",
+            "messageArgs": [
+                "banner",
+                "header"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 183,
+                "width": 1784
+            },
+            "snippet": "<header class=\"flex-header\" role=\"banner\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "violation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/aria_role_valid.html#%7B%22message%22%3A%22The%20ARIA%20role%20'banner'%20is%20not%20valid%20for%20the%20element%20%3Cheader%3E%22%2C%22snippet%22%3A%22%3Cheader%20class%3D%5C%22flex-header%5C%22%20role%3D%5C%22banner%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_role_valid%22%2C%22msgArgs%22%3A%5B%22banner%22%2C%22header%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_banner_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/header[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/banner[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Multiple elements with \"banner\" role do not have unique labels",
+            "messageArgs": [
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 183,
+                "width": 1784
+            },
+            "snippet": "<header class=\"flex-header\" role=\"banner\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "violation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/aria_banner_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22banner%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cheader%20class%3D%5C%22flex-header%5C%22%20role%3D%5C%22banner%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_banner_label_unique%22%2C%22msgArgs%22%3A%5B%22%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_role_redundant",
+            "value": [
+                "RECOMMENDATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/header[1]/nav[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/banner[1]/navigation[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_redundant",
+            "message": "The explicitly-assigned ARIA role \"navigation\" is redundant with the implicit role of the element <nav>",
+            "messageArgs": [
+                "navigation",
+                "nav"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 0,
+                "width": 1784
+            },
+            "snippet": "<nav role=\"navigation\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "recommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/aria_role_redundant.html#%7B%22message%22%3A%22The%20explicitly-assigned%20ARIA%20role%20%5C%22navigation%5C%22%20is%20redundant%20with%20the%20implicit%20role%20of%20the%20element%20%3Cnav%3E%22%2C%22snippet%22%3A%22%3Cnav%20role%3D%5C%22navigation%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_redundant%22%2C%22ruleId%22%3A%22aria_role_redundant%22%2C%22msgArgs%22%3A%5B%22navigation%22%2C%22nav%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_navigation_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/header[1]/nav[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/banner[1]/navigation[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Multiple elements with \"navigation\" role do not have unique labels",
+            "messageArgs": [
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 0,
+                "width": 1784
+            },
+            "snippet": "<nav role=\"navigation\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "violation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/aria_navigation_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22navigation%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cnav%20role%3D%5C%22navigation%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_navigation_label_unique%22%2C%22msgArgs%22%3A%5B%22%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/header[1]/nav[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/banner[1]/navigation[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": -19998,
+                "top": 0,
+                "height": 37,
+                "width": 342
+            },
+            "snippet": "<a title=\"Skip navigation links\" href=\"#skip-navbar-top\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20title%3D%5C%22Skip%20navigation%20links%5C%22%20href%3D%5C%22%23skip-navbar-top%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/header[1]/nav[1]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/banner[1]/navigation[1]/textbox[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1372,
+                "top": 114,
+                "height": 59,
+                "width": 398
+            },
+            "snippet": "<input class=\"watermark ui-autocomplete-input\" aria-label=\"Search\" value=\"search\" id=\"search-input\" type=\"text\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20class%3D%5C%22watermark%20ui-autocomplete-input%5C%22%20aria-label%3D%5C%22Search%5C%22%20value%3D%5C%22search%5C%22%20id%3D%5C%22search-input%5C%22%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_focus_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/header[1]/nav[1]/div[2]/div[1]/input[2]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/banner[1]/navigation[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_focus_not_visible",
+            "message": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1732,
+                "top": 128,
+                "height": 32,
+                "width": 32
+            },
+            "snippet": "<input aria-label=\"Reset the search field\" value=\"reset\" id=\"reset-button\" type=\"reset\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Cinput%20aria-label%3D%5C%22Reset%20the%20search%20field%5C%22%20value%3D%5C%22reset%5C%22%20id%3D%5C%22reset-button%5C%22%20type%3D%5C%22reset%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_role_redundant",
+            "value": [
+                "RECOMMENDATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_redundant",
+            "message": "The explicitly-assigned ARIA role \"main\" is redundant with the implicit role of the element <main>",
+            "messageArgs": [
+                "main",
+                "main"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 183,
+                "height": 331772,
+                "width": 1784
+            },
+            "snippet": "<main role=\"main\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "recommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/aria_role_redundant.html#%7B%22message%22%3A%22The%20explicitly-assigned%20ARIA%20role%20%5C%22main%5C%22%20is%20redundant%20with%20the%20implicit%20role%20of%20the%20element%20%3Cmain%3E%22%2C%22snippet%22%3A%22%3Cmain%20role%3D%5C%22main%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_redundant%22%2C%22ruleId%22%3A%22aria_role_redundant%22%2C%22msgArgs%22%3A%5B%22main%22%2C%22main%22%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[1]/dd[8]/div[1]/a[2]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[31]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 1060,
+                "height": 72,
+                "width": 1555
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.util\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.util%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Futil%2FMap.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[1]/dt[248]/a[3]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/term[248]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 357,
+                "top": 19708,
+                "height": 32,
+                "width": 156
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang.annotation\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/Annotation.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang.annotation%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2Fannotation%2FAnnotation.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[1]/dd[277]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[109]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 22031,
+                "height": 32,
+                "width": 120
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FString.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[1]/dd[309]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'square'",
+            "messageArgs": [
+                "square"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 24766,
+                "height": 40,
+                "width": 1644
+            },
+            "snippet": "<div class=\"block\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'square'%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22block%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22square%22%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[2]/dd[37]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[138]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 464,
+                "top": 29576,
+                "height": 32,
+                "width": 187
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.math\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.math%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Fmath%2FBigDecimal.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[2]/dd[38]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[139]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 464,
+                "top": 29657,
+                "height": 32,
+                "width": 187
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.math\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.math%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Fmath%2FBigInteger.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[2]/dd[39]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[140]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 464,
+                "top": 29738,
+                "height": 32,
+                "width": 187
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.math\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.math%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Fmath%2FBigInteger.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[3]/dd[29]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[152]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 643,
+                "top": 35856,
+                "height": 32,
+                "width": 127
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.util\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.util%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Futil%2FOptional.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[3]/dd[30]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[153]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 643,
+                "top": 35930,
+                "height": 32,
+                "width": 127
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.util\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.util%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Futil%2FOptional.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[3]/dd[94]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[163]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 372,
+                "top": 40947,
+                "height": 32,
+                "width": 271
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.util.concurrent\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/CompletionStage.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.util.concurrent%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Futil%2Fconcurrent%2FCompletionStage.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[3]/dd[187]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[206]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 723,
+                "top": 48140,
+                "height": 32,
+                "width": 120
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FString.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[5]/dt[88]/a[3]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/term[1044]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 359,
+                "top": 80873,
+                "height": 32,
+                "width": 149
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Throwable.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FThrowable.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[5]/dd[95]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[355]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 308,
+                "top": 81719,
+                "height": 32,
+                "width": 271
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.util.concurrent\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ExecutorService.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.util.concurrent%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Futil%2Fconcurrent%2FExecutorService.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[3]/div[1]/a[2]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[400]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 401,
+                "top": 94944,
+                "height": 32,
+                "width": 120
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Number.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FNumber.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[5]/div[1]/a[2]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[407]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 401,
+                "top": 95170,
+                "height": 32,
+                "width": 120
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Number.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FNumber.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[7]/div[1]/a[2]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[413]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 401,
+                "top": 95365,
+                "height": 32,
+                "width": 120
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Number.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FNumber.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dt[8]/a[3]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/term[1227]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 220,
+                "top": 95411,
+                "height": 32,
+                "width": 119
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Number.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FNumber.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[112]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[435]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 202,
+                "top": 103424,
+                "height": 32,
+                "width": 79
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FClass.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[113]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[436]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 230,
+                "top": 103498,
+                "height": 32,
+                "width": 79
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FClass.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[124]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'upper' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "upper"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 104469,
+                "height": 32,
+                "width": 1644
+            },
+            "snippet": "<div class=\"block\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'upper'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22block%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22upper%22%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[125]/div[1]/a[2]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[438]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 616,
+                "top": 104546,
+                "height": 32,
+                "width": 255
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Thread.html#getContextClassLoader()\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FThread.html%23getContextClassLoader()%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[150]/div[1]/a[2]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[442]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1275,
+                "top": 106454,
+                "height": 32,
+                "width": 265
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Thread.html#getContextClassLoader()\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FThread.html%23getContextClassLoader()%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[222]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[465]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 230,
+                "top": 111959,
+                "height": 32,
+                "width": 73
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang.reflect\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Type.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang.reflect%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2Freflect%2FType.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[230]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[467]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1119,
+                "top": 112534,
+                "height": 32,
+                "width": 120
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FString.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[373]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[493]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 317,
+                "top": 123491,
+                "height": 32,
+                "width": 103
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FClass.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[374]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[494]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 317,
+                "top": 123572,
+                "height": 32,
+                "width": 204
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang.reflect\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Constructor.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang.reflect%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2Freflect%2FConstructor.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[375]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[495]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 317,
+                "top": 123654,
+                "height": 32,
+                "width": 103
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang.reflect\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Field.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang.reflect%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2Freflect%2FField.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[376]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[496]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 317,
+                "top": 123735,
+                "height": 32,
+                "width": 120
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang.reflect\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Member.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang.reflect%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2Freflect%2FMember.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[377]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[497]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 317,
+                "top": 123816,
+                "height": 32,
+                "width": 120
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang.reflect\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Method.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang.reflect%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2Freflect%2FMethod.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[378]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[498]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 317,
+                "top": 123897,
+                "height": 32,
+                "width": 170
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang.reflect\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Parameter.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang.reflect%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2Freflect%2FParameter.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[449]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[503]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 178,
+                "top": 129194,
+                "height": 32,
+                "width": 103
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang.reflect\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Field.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang.reflect%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2Freflect%2FField.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[449]/div[1]/a[2]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[504]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 771,
+                "top": 129194,
+                "height": 32,
+                "width": 120
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang.reflect\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Method.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang.reflect%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2Freflect%2FMethod.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[449]/div[1]/a[3]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[505]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 129233,
+                "height": 32,
+                "width": 204
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang.reflect\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Constructor.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang.reflect%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2Freflect%2FConstructor.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[581]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[532]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 361,
+                "top": 139390,
+                "height": 32,
+                "width": 187
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.util\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.util%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Futil%2FCollection.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[582]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[533]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 361,
+                "top": 139503,
+                "height": 32,
+                "width": 187
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.util\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.util%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Futil%2FCollection.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[583]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[534]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 361,
+                "top": 139616,
+                "height": 32,
+                "width": 187
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.util\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.util%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Futil%2FCollection.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[584]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[535]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 361,
+                "top": 139729,
+                "height": 32,
+                "width": 187
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.util\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.util%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Futil%2FCollection.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[7]/dd[742]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[561]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 561,
+                "top": 151721,
+                "height": 32,
+                "width": 69
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.net\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.net%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Fnet%2FURI.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[13]/dd[139]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[700]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1257,
+                "top": 197085,
+                "height": 32,
+                "width": 69
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.util\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.util%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Futil%2FMap.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[14]/dd[105]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"request not acceptable\"",
+            "messageArgs": [
+                "\"request not acceptable\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 205383,
+                "height": 32,
+                "width": 1644
+            },
+            "snippet": "<div class=\"block\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22request%20not%20acceptable%5C%22%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22block%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22request%20not%20acceptable%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[14]/dd[106]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"request not acceptable\"",
+            "messageArgs": [
+                "\"request not acceptable\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 205457,
+                "height": 32,
+                "width": 1644
+            },
+            "snippet": "<div class=\"block\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22request%20not%20acceptable%5C%22%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22block%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22request%20not%20acceptable%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[14]/dd[107]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"request not acceptable\"",
+            "messageArgs": [
+                "\"request not acceptable\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 205531,
+                "height": 32,
+                "width": 1644
+            },
+            "snippet": "<div class=\"block\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22request%20not%20acceptable%5C%22%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22block%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22request%20not%20acceptable%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[14]/dd[108]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"request not acceptable\"",
+            "messageArgs": [
+                "\"request not acceptable\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 205605,
+                "height": 32,
+                "width": 1644
+            },
+            "snippet": "<div class=\"block\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22request%20not%20acceptable%5C%22%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22block%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22request%20not%20acceptable%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[14]/dd[109]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"request not acceptable\"",
+            "messageArgs": [
+                "\"request not acceptable\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 205679,
+                "height": 32,
+                "width": 1644
+            },
+            "snippet": "<div class=\"block\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22request%20not%20acceptable%5C%22%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22block%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22request%20not%20acceptable%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[14]/dd[110]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"request not acceptable\"",
+            "messageArgs": [
+                "\"request not acceptable\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 205753,
+                "height": 32,
+                "width": 1644
+            },
+            "snippet": "<div class=\"block\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22request%20not%20acceptable%5C%22%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22block%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22request%20not%20acceptable%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[14]/dd[111]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"request not acceptable\"",
+            "messageArgs": [
+                "\"request not acceptable\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 205827,
+                "height": 32,
+                "width": 1644
+            },
+            "snippet": "<div class=\"block\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22request%20not%20acceptable%5C%22%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22block%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22request%20not%20acceptable%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[14]/dd[112]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"request not acceptable\"",
+            "messageArgs": [
+                "\"request not acceptable\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 205901,
+                "height": 32,
+                "width": 1644
+            },
+            "snippet": "<div class=\"block\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22request%20not%20acceptable%5C%22%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22block%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22request%20not%20acceptable%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[14]/dd[167]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[728]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 464,
+                "top": 210039,
+                "height": 32,
+                "width": 120
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Number.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FNumber.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[15]/dd[66]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'lower' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "lower"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 214991,
+                "height": 32,
+                "width": 1644
+            },
+            "snippet": "<div class=\"block\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'lower'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22block%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22lower%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[16]/dd[23]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'left' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "left"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 222101,
+                "height": 32,
+                "width": 1644
+            },
+            "snippet": "<div class=\"block\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'left'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22block%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22left%22%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[18]/dd[7]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[783]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 587,
+                "top": 236115,
+                "height": 32,
+                "width": 120
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang.reflect\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Method.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang.reflect%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2Freflect%2FMethod.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[18]/dd[9]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[784]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 451,
+                "top": 236270,
+                "height": 32,
+                "width": 120
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FString.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[18]/dd[21]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[791]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 346,
+                "top": 237510,
+                "height": 32,
+                "width": 204
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.io\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.io%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Fio%2FInputStream.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[18]/dd[34]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"reconnection not set\"",
+            "messageArgs": [
+                "\"reconnection not set\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 238491,
+                "height": 40,
+                "width": 1644
+            },
+            "snippet": "<div class=\"block\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22reconnection%20not%20set%5C%22%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22block%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22reconnection%20not%20set%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[18]/dd[75]/div[1]/a[2]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[806]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 501,
+                "top": 242037,
+                "height": 32,
+                "width": 170
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Throwable.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FThrowable.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[18]/dd[76]/div[1]/a[2]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[808]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 501,
+                "top": 242119,
+                "height": 32,
+                "width": 170
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Throwable.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FThrowable.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[18]/dd[172]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[814]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 891,
+                "top": 249420,
+                "height": 32,
+                "width": 373
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FIllegalStateException.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[18]/dd[176]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'Large'",
+            "messageArgs": [
+                "Large"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 249722,
+                "height": 32,
+                "width": 1644
+            },
+            "snippet": "<div class=\"block\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'Large'%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22block%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22Large%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[18]/dd[177]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'Large'",
+            "messageArgs": [
+                "Large"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 249796,
+                "height": 32,
+                "width": 1644
+            },
+            "snippet": "<div class=\"block\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'Large'%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22block%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22Large%22%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[18]/dt[243]/a[3]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/term[3293]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 477,
+                "top": 255126,
+                "height": 32,
+                "width": 149
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Throwable.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FThrowable.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[18]/dd[276]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[831]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 635,
+                "top": 257697,
+                "height": 32,
+                "width": 271
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.util.concurrent\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/CompletionStage.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.util.concurrent%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Futil%2Fconcurrent%2FCompletionStage.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[19]/dd[8]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[834]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 308,
+                "top": 258621,
+                "height": 32,
+                "width": 423
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.util.concurrent\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ScheduledExecutorService.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.util.concurrent%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Futil%2Fconcurrent%2FScheduledExecutorService.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[19]/dd[29]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[840]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 545,
+                "top": 260343,
+                "height": 32,
+                "width": 69
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.net\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.net%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Fnet%2FURI.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[19]/dd[86]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[843]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 80,
+                "top": 264628,
+                "height": 32,
+                "width": 120
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FString.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[19]/dd[167]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[861]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 148,
+                "top": 270857,
+                "height": 32,
+                "width": 204
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ClassLoader.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2FClassLoader.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[20]/dd[148]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[916]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 283,
+                "top": 305825,
+                "height": 32,
+                "width": 86
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.lang.reflect\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Type.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.lang.reflect%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Flang%2Freflect%2FType.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/iframe[1]/html[1]/body[1]/div[1]/div[1]/main[1]/dl[21]/dd[52]/div[1]/a[2]",
+                "aria": "/document[1]/main[1]/article[1]/document[1]/main[1]/link[924]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1139,
+                "top": 310753,
+                "height": 32,
+                "width": 69
+            },
+            "snippet": "<a target=\"_blank\" class=\"external-link\" title=\"class or interface in java.net\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22external-link%5C%22%20title%3D%5C%22class%20or%20interface%20in%20java.net%5C%22%20href%3D%5C%22https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F17%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Fnet%2FURI.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1284,
+                "top": 2356,
+                "height": 90,
+                "width": 90
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" id=\"footer_github_link\" href=\"https://github.com/OpenLiberty/\" class=\"footer_round_btn\" aria-label=\"Github\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20id%3D%5C%22footer_github_link%5C%22%20href%3D%5C%22https%3A%2F%2Fgithub.com%2FOpenLiberty%2F%5C%22%20class%3D%5C%22footer_round_btn%5C%22%20aria-label%3D%5C%22Github%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1416,
+                "top": 2356,
+                "height": 90,
+                "width": 90
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" id=\"footer_stackoverflow_link\" href=\"https://stackoverflow.com/questions/tagged/open-liberty\" class=\"footer_round_btn\" aria-label=\"Open Liberty questions on Stack Overflow\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20id%3D%5C%22footer_stackoverflow_link%5C%22%20href%3D%5C%22https%3A%2F%2Fstackoverflow.com%2Fquestions%2Ftagged%2Fopen-liberty%5C%22%20class%3D%5C%22footer_round_btn%5C%22%20aria-label%3D%5C%22Open%20Liberty%20questions%20on%20Stack%20Overflow%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/a[3]",
+                "aria": "/document[1]/contentinfo[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1548,
+                "top": 2356,
+                "height": 90,
+                "width": 90
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" id=\"footer_groupsio_link\" href=\"https://groups.io/g/openliberty\" class=\"footer_round_btn\" aria-label=\"Open Liberty Groups.io\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20id%3D%5C%22footer_groupsio_link%5C%22%20href%3D%5C%22https%3A%2F%2Fgroups.io%2Fg%2Fopenliberty%5C%22%20class%3D%5C%22footer_round_btn%5C%22%20aria-label%3D%5C%22Open%20Liberty%20Groups.io%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/a[4]",
+                "aria": "/document[1]/contentinfo[1]/link[4]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1680,
+                "top": 2356,
+                "height": 90,
+                "width": 90
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" id=\"footer_gitter_link\" href=\"https://app.gitter.im/#/room/#OpenLiberty_development:gitter.im\" class=\"footer_round_btn\" aria-label=\"Open Liberty Gitter\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20id%3D%5C%22footer_gitter_link%5C%22%20href%3D%5C%22https%3A%2F%2Fapp.gitter.im%2F%23%2Froom%2F%23OpenLiberty_development%3Agitter.im%5C%22%20class%3D%5C%22footer_round_btn%5C%22%20aria-label%3D%5C%22Open%20Liberty%20Gitter%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[2]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 577,
+                "top": 2514,
+                "height": 26,
+                "width": 135
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" id=\"footer_privacy_policy_link\" href=\"https://www.ibm.com/privacy/\" class=\"left_footer_link\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20id%3D%5C%22footer_privacy_policy_link%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.ibm.com%2Fprivacy%2F%5C%22%20class%3D%5C%22left_footer_link%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[2]/div[1]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 733,
+                "top": 2514,
+                "height": 26,
+                "width": 73
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" id=\"footer_license_link\" href=\"https://github.com/OpenLiberty/open-liberty/blob/release/LICENSE\" class=\"left_footer_link\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20id%3D%5C%22footer_license_link%5C%22%20href%3D%5C%22https%3A%2F%2Fgithub.com%2FOpenLiberty%2Fopen-liberty%2Fblob%2Frelease%2FLICENSE%5C%22%20class%3D%5C%22left_footer_link%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[2]/div[1]/a[3]",
+                "aria": "/document[1]/contentinfo[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 826,
+                "top": 2514,
+                "height": 26,
+                "width": 57
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" id=\"footer_logos_link\" href=\"https://github.com/OpenLiberty/logos\" class=\"left_footer_link\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.08.29/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20id%3D%5C%22footer_logos_link%5C%22%20href%3D%5C%22https%3A%2F%2Fgithub.com%2FOpenLiberty%2Flogos%5C%22%20class%3D%5C%22left_footer_link%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 154541,
+    "ruleTime": 19416,
+    "nls": {
+        "img_alt_background": {
+            "0": "Background images that convey important information must have a text alternative that describes the image",
+            "Manual_1": "Verify important background image information has a text alternative in system high contrast mode"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "style_highcontrast_visible": {
+            "0": "Windows high contrast mode must be supported when using CSS to include, position or alter non-decorative content",
+            "Manual_1": "Confirm Windows high contrast mode is supported when using CSS to include, position or alter non-decorative content"
+        },
+        "aria_main_label_visible": {
+            "0": "Each element with \"main\" role should have a unique visible label that describes its purpose",
+            "Fail_1": "Multiple elements with \"main\" role do not have unique visible labels"
+        },
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "aria_banner_label_unique": {
+            "0": "Each element with \"banner\" role must have a unique label that describes its purpose",
+            "Fail_1": "Multiple elements with \"banner\" role do not have unique labels"
+        },
+        "aria_navigation_label_unique": {
+            "0": "Each element with \"navigation\" role must have a unique label that describes its purpose",
+            "Fail_1": "Multiple elements with \"navigation\" role do not have unique labels"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "style_focus_visible": {
+            "0": "The keyboard focus indicator should be visible when default border or outline is modified by CSS",
+            "potential_focus_not_visible": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'"
+        },
+        "label_name_visible": {
+            "0": "Accessible name must match or contain the visible label text",
+            "Fail_1": "Accessible name does not match or contain the visible label text"
+        },
+        "aria_role_redundant": {
+            "0": "An explicitly-assigned ARIA role should not be redundant with the implicit role of the element",
+            "fail_redundant": "The explicitly-assigned ARIA role \"{0}\" is redundant with the implicit role of the element <{1}>"
+        },
+        "aria_role_valid": {
+            "0": "ARIA roles must be valid for the element to which they are assigned",
+            "Fail_1": "The ARIA role '{0}' is not valid for the element <{1}>"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        },
+        "element_attribute_deprecated": {
+            "0": "Avoid use of obsolete features if possible",
+            "fail_elem_attr": "The HTML attribute(s) \"{0}\" is deprecated for the <{1}> element in HTML 5"
+        },
+        "a_target_warning": {
+            "0": "Users should be warned in advance if their input action will open a new window",
+            "potential_warn": "Inform the user when their input action will open a new window"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        }
+    },
+    "summary": {
+        "counts": {
+            "violation": 5,
+            "potentialviolation": 22,
+            "recommendation": 7,
+            "potentialrecommendation": 59,
+            "manual": 2,
+            "pass": 154446,
+            "ignored": 0,
+            "elements": 23175,
+            "elementsViolation": 4,
+            "elementsViolationReview": 25
+        },
+        "scanTime": 39947,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "IBM_Accessibility"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation",
+            "recommendation",
+            "potentialrecommendation",
+            "manual"
+        ],
+        "startScan": 1726641919680,
+        "URL": "https://openliberty.io/docs/latest/reference/javadoc/microprofile-6.1-javadoc.html?path=microprofile-6.1-javadoc/index-all.html"
+    },
+    "scanID": "87ebf4fa-f89d-4d6c-ba50-059be8086d05",
+    "toolID": "cypress-accessibility-checker-v3.1.71",
+    "label": "./MICROPROFILE/6.1/microprofile_index1"
+}

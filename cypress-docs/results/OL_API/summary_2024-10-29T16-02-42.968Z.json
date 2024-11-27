@@ -1,0 +1,97 @@
+{
+    "counts": {
+        "ignored": 0,
+        "violation": 25,
+        "recommendation": 4,
+        "pass": 0,
+        "potentialviolation": 16,
+        "potentialrecommendation": 149,
+        "manual": 8,
+        "elements": 190,
+        "elementsViolation": 25,
+        "elementsViolationReview": 37
+    },
+    "startReport": 1730217762968,
+    "endReport": 1730218027354,
+    "toolID": "cypress-accessibility-checker-v3.1.71",
+    "policies": [
+        "IBM_Accessibility"
+    ],
+    "reportLevels": [
+        "violation",
+        "potentialviolation",
+        "recommendation",
+        "potentialrecommendation",
+        "manual"
+    ],
+    "labels": [
+        "master"
+    ],
+    "failLevels": [
+        "violation",
+        "potentialviolation"
+    ],
+    "scanID": "62ea3112-d8af-43e9-ad64-39eadf046d70",
+    "pageScanSummary": [
+        {
+            "label": "./JAKARTA_EE/other_samples/difference-100-91",
+            "counts": {
+                "violation": 10,
+                "potentialviolation": 4,
+                "recommendation": 1,
+                "potentialrecommendation": 64,
+                "manual": 2,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 78,
+                "elementsViolation": 10,
+                "elementsViolationReview": 13
+            }
+        },
+        {
+            "label": "./JAKARTA_EE/other_samples/difference-100-91",
+            "counts": {
+                "violation": 10,
+                "potentialviolation": 4,
+                "recommendation": 1,
+                "potentialrecommendation": 64,
+                "manual": 2,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 78,
+                "elementsViolation": 10,
+                "elementsViolationReview": 13
+            }
+        },
+        {
+            "label": "./JAKARTA_EE/other_samples/difference-91-80",
+            "counts": {
+                "violation": 4,
+                "potentialviolation": 4,
+                "recommendation": 1,
+                "potentialrecommendation": 11,
+                "manual": 2,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 19,
+                "elementsViolation": 4,
+                "elementsViolationReview": 7
+            }
+        },
+        {
+            "label": "./JAKARTA_EE/other_samples/updates-91",
+            "counts": {
+                "violation": 1,
+                "potentialviolation": 4,
+                "recommendation": 1,
+                "potentialrecommendation": 10,
+                "manual": 2,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 15,
+                "elementsViolation": 1,
+                "elementsViolationReview": 4
+            }
+        }
+    ]
+}

@@ -1,0 +1,2339 @@
+{
+    "results": [
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/head[1]/link[2]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 2,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<link rel=\"stylesheet\" integrity=\"sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css\" crossorigin=\"anonymous\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Clink%20rel%3D%5C%22stylesheet%5C%22%20integrity%3D%5C%22sha384-HSMxcRTRxnN%2BBdg0JdbxYKrThecOKuH5zCYotlSAcp1%2Bc8xmyTe9GYg1l9a69psu%5C%22%20href%3D%5C%22https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fbootstrap%403.4.1%2Fdist%2Fcss%2Fbootstrap.min.css%5C%22%20crossorigin%3D%5C%22anonymous%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_highcontrast_visible",
+            "value": [
+                "VIOLATION",
+                "MANUAL"
+            ],
+            "path": {
+                "dom": "/html[1]/head[1]/link[2]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Manual_1",
+            "message": "Confirm Windows high contrast mode is supported when using CSS to include, position or alter non-decorative content",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<link rel=\"stylesheet\" integrity=\"sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css\" crossorigin=\"anonymous\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "manual",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/style_highcontrast_visible.html#%7B%22message%22%3A%22Confirm%20Windows%20high%20contrast%20mode%20is%20supported%20when%20using%20CSS%20to%20include%2C%20position%20or%20alter%20non-decorative%20content%22%2C%22snippet%22%3A%22%3Clink%20rel%3D%5C%22stylesheet%5C%22%20integrity%3D%5C%22sha384-HSMxcRTRxnN%2BBdg0JdbxYKrThecOKuH5zCYotlSAcp1%2Bc8xmyTe9GYg1l9a69psu%5C%22%20href%3D%5C%22https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fbootstrap%403.4.1%2Fdist%2Fcss%2Fbootstrap.min.css%5C%22%20crossorigin%3D%5C%22anonymous%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22MANUAL%22%5D%2C%22reasonId%22%3A%22Manual_1%22%2C%22ruleId%22%3A%22style_highcontrast_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_background",
+            "value": [
+                "RECOMMENDATION",
+                "MANUAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/nav[1]",
+                "aria": "/document[1]/banner[1]/navigation[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Manual_1",
+            "message": "Verify important background image information has a text alternative in system high contrast mode",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 120,
+                "width": 2000
+            },
+            "snippet": "<nav id=\"nav_bar\" aria-label=\"Navigation header links\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "manual",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/img_alt_background.html#%7B%22message%22%3A%22Verify%20important%20background%20image%20information%20has%20a%20text%20alternative%20in%20system%20high%20contrast%20mode%22%2C%22snippet%22%3A%22%3Cnav%20id%3D%5C%22nav_bar%5C%22%20aria-label%3D%5C%22Navigation%20header%20links%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22MANUAL%22%5D%2C%22reasonId%22%3A%22Manual_1%22%2C%22ruleId%22%3A%22img_alt_background%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/nav[1]/div[1]/a[1]",
+                "aria": "/document[1]/banner[1]/navigation[1]/link[1]"
+            },
+            "ruleTime": 2,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 334,
+                "top": 20,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a id=\"home_link\" href=\"/\" aria-label=\"Open Liberty Home\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20id%3D%5C%22home_link%5C%22%20href%3D%5C%22%2F%5C%22%20aria-label%3D%5C%22Open%20Liberty%20Home%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_role_redundant",
+            "value": [
+                "RECOMMENDATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]",
+                "aria": "/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_redundant",
+            "message": "The explicitly-assigned ARIA role \"main\" is redundant with the implicit role of the element <main>",
+            "messageArgs": [
+                "main",
+                "main"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 120,
+                "height": 43047,
+                "width": 2000
+            },
+            "snippet": "<main role=\"main\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "recommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/aria_role_redundant.html#%7B%22message%22%3A%22The%20explicitly-assigned%20ARIA%20role%20%5C%22main%5C%22%20is%20redundant%20with%20the%20implicit%20role%20of%20the%20element%20%3Cmain%3E%22%2C%22snippet%22%3A%22%3Cmain%20role%3D%5C%22main%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_redundant%22%2C%22ruleId%22%3A%22aria_role_redundant%22%2C%22msgArgs%22%3A%5B%22main%22%2C%22main%22%5D%7D"
+        },
+        {
+            "ruleId": "style_focus_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/navigation[1]/button[1]"
+            },
+            "ruleTime": 4,
+            "reasonId": "potential_focus_not_visible",
+            "message": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 120,
+                "height": 90,
+                "width": 90
+            },
+            "snippet": "<button class=\"nav-toggle\" aria-label=\"Toggle the navigation menu\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22nav-toggle%5C%22%20aria-label%3D%5C%22Toggle%20the%20navigation%20menu%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/navigation[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 120,
+                "height": 90,
+                "width": 90
+            },
+            "snippet": "<button class=\"nav-toggle\" aria-label=\"Toggle the navigation menu\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialviolation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22nav-toggle%5C%22%20aria-label%3D%5C%22Toggle%20the%20navigation%20menu%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "label_name_visible",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/navigation[1]/button[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Fail_1",
+            "message": "Accessible name does not match or contain the visible label text",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 120,
+                "height": 90,
+                "width": 90
+            },
+            "snippet": "<button class=\"nav-toggle\" aria-label=\"Toggle the navigation menu\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "violation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/label_name_visible.html#%7B%22message%22%3A%22Accessible%20name%20does%20not%20match%20or%20contain%20the%20visible%20label%20text%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22nav-toggle%5C%22%20aria-label%3D%5C%22Toggle%20the%20navigation%20menu%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22label_name_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/navigation[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1693,
+                "top": 148,
+                "height": 32,
+                "width": 136
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" id=\"open_issue_link\" href=\"https://github.com/OpenLiberty/docs/issues/new?body=Document: Differences between Jakarta EE 10 and 9.1%0Ahttp://openliberty.io/docs/latest/reference/diff/jakarta-ee10-diff.html%0A%0A**Please describe the problem you are having with the documentation. Is information missing, inaccurate, or unclear? Tell us about the context where you encountered the problem so we can understand how to address it.**\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20id%3D%5C%22open_issue_link%5C%22%20href%3D%5C%22https%3A%2F%2Fgithub.com%2FOpenLiberty%2Fdocs%2Fissues%2Fnew%3Fbody%3DDocument%3A%20Differences%20between%20Jakarta%20EE%2010%20and%209.1%250Ahttp%3A%2F%2Fopenliberty.io%2Fdocs%2Flatest%2Freference%2Fdiff%2Fjakarta-ee10-diff.html%250A%250A**Please%20describe%20the%20problem%20you%20are%20having%20with%20the%20documentation.%20Is%20information%20missing%2C%20inaccurate%2C%20or%20unclear%3F%20Tell%20us%20about%20the%20context%20where%20you%20encountered%20the%20problem%20so%20we%20can%20understand%20how%20to%20address%20it.**%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/a[2]",
+                "aria": "/document[1]/main[1]/navigation[1]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1849,
+                "top": 148,
+                "height": 32,
+                "width": 122
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" id=\"edit_topic_link\" href=\"https://github.com/OpenLiberty/docs/edit/v24.0.0.10/modules/reference/pages/diff/jakarta-ee10-diff.adoc\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20id%3D%5C%22edit_topic_link%5C%22%20href%3D%5C%22https%3A%2F%2Fgithub.com%2FOpenLiberty%2Fdocs%2Fedit%2Fv24.0.0.10%2Fmodules%2Freference%2Fpages%2Fdiff%2Fjakarta-ee10-diff.adoc%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[3]/div[1]/div[4]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[16]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 479,
+                "top": 5339,
+                "height": 32,
+                "width": 431
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/authentication/3.0/apidocs/jakarta.security.auth.message/module-summary.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fauthentication%2F3.0%2Fapidocs%2Fjakarta.security.auth.message%2Fmodule-summary.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[4]/div[1]/div[3]/div[3]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[22]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 479,
+                "top": 6631,
+                "height": 32,
+                "width": 417
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/authorization/2.1/apidocs/jakarta.security.jacc/jakarta/security/jacc/package-summary.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fauthorization%2F2.1%2Fapidocs%2Fjakarta.security.jacc%2Fjakarta%2Fsecurity%2Fjacc%2Fpackage-summary.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[6]/div[1]/div[4]/div[4]/div[1]/div[1]/pre[1]/code[1]/span[2]/span[4]/span[1]/span[1]",
+                "aria": "/document[1]/main[1]/article[1]/code[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.34 with its background is less than the WCAG AA minimum requirements for text of size 14px and weight of 400",
+            "messageArgs": [
+                "4.34",
+                14,
+                400,
+                "#008080",
+                "#f1f4fe",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 274,
+                "top": 11424,
+                "height": 32,
+                "width": 152
+            },
+            "snippet": "<span class=\"hljs-attr\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "violation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.34%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2014px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22hljs-attr%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.34%22%2C14%2C400%2C%22%23008080%22%2C%22%23f1f4fe%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[6]/div[1]/div[4]/div[4]/div[1]/div[1]/pre[1]/code[1]/span[2]/span[8]/span[1]/span[1]",
+                "aria": "/document[1]/main[1]/article[1]/code[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.34 with its background is less than the WCAG AA minimum requirements for text of size 14px and weight of 400",
+            "messageArgs": [
+                "4.34",
+                14,
+                400,
+                "#008080",
+                "#f1f4fe",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 224,
+                "top": 11472,
+                "height": 32,
+                "width": 85
+            },
+            "snippet": "<span class=\"hljs-attr\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "violation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.34%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2014px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22hljs-attr%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.34%22%2C14%2C400%2C%22%23008080%22%2C%22%23f1f4fe%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[6]/div[1]/div[4]/div[4]/div[1]/div[1]/pre[1]/code[1]/span[2]/span[12]/span[1]/span[1]",
+                "aria": "/document[1]/main[1]/article[1]/code[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.34 with its background is less than the WCAG AA minimum requirements for text of size 14px and weight of 400",
+            "messageArgs": [
+                "4.34",
+                14,
+                400,
+                "#008080",
+                "#f1f4fe",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 224,
+                "top": 11520,
+                "height": 32,
+                "width": 303
+            },
+            "snippet": "<span class=\"hljs-attr\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "violation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.34%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2014px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22hljs-attr%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.34%22%2C14%2C400%2C%22%23008080%22%2C%22%23f1f4fe%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[6]/div[1]/div[4]/div[4]/div[1]/div[1]/pre[1]/code[1]/span[2]/span[16]/span[1]/span[1]",
+                "aria": "/document[1]/main[1]/article[1]/code[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.34 with its background is less than the WCAG AA minimum requirements for text of size 14px and weight of 400",
+            "messageArgs": [
+                "4.34",
+                14,
+                400,
+                "#008080",
+                "#f1f4fe",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 224,
+                "top": 11616,
+                "height": 32,
+                "width": 118
+            },
+            "snippet": "<span class=\"hljs-attr\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "violation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.34%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2014px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22hljs-attr%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.34%22%2C14%2C400%2C%22%23008080%22%2C%22%23f1f4fe%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[6]/div[1]/div[4]/div[4]/div[1]/div[1]/pre[1]/code[1]/span[2]/span[20]/span[1]/span[1]",
+                "aria": "/document[1]/main[1]/article[1]/code[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.34 with its background is less than the WCAG AA minimum requirements for text of size 14px and weight of 400",
+            "messageArgs": [
+                "4.34",
+                14,
+                400,
+                "#008080",
+                "#f1f4fe",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 224,
+                "top": 11664,
+                "height": 32,
+                "width": 320
+            },
+            "snippet": "<span class=\"hljs-attr\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "violation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.34%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2014px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22hljs-attr%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.34%22%2C14%2C400%2C%22%23008080%22%2C%22%23f1f4fe%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[6]/div[1]/div[7]/div[2]/div[1]/div[1]/pre[1]/code[1]/span[1]/span[4]/span[1]/span[1]",
+                "aria": "/document[1]/main[1]/article[1]/code[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.34 with its background is less than the WCAG AA minimum requirements for text of size 14px and weight of 400",
+            "messageArgs": [
+                "4.34",
+                14,
+                400,
+                "#008080",
+                "#f1f4fe",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 241,
+                "top": 13327,
+                "height": 32,
+                "width": 437
+            },
+            "snippet": "<span class=\"hljs-attr\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "violation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.34%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2014px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22hljs-attr%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.34%22%2C14%2C400%2C%22%23008080%22%2C%22%23f1f4fe%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[6]/div[1]/div[7]/div[2]/div[1]/div[1]/pre[1]/code[1]/span[1]/span[8]/span[1]/span[1]",
+                "aria": "/document[1]/main[1]/article[1]/code[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.34 with its background is less than the WCAG AA minimum requirements for text of size 14px and weight of 400",
+            "messageArgs": [
+                "4.34",
+                14,
+                400,
+                "#008080",
+                "#f1f4fe",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 829,
+                "top": 13327,
+                "height": 32,
+                "width": 505
+            },
+            "snippet": "<span class=\"hljs-attr\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "violation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.34%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2014px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22hljs-attr%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.34%22%2C14%2C400%2C%22%23008080%22%2C%22%23f1f4fe%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[6]/div[1]/div[7]/div[5]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[40]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 479,
+                "top": 13848,
+                "height": 32,
+                "width": 685
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/cdi/4.0/apidocs/\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fcdi%2F4.0%2Fapidocs%2F%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[7]/div[1]/div[3]/div[1]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[43]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 596,
+                "top": 14526,
+                "height": 32,
+                "width": 906
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/expression-language/5.0/jakarta-expression-language-spec-5.0.html#coerce-a-to-functional-interface-method-invocation\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fexpression-language%2F5.0%2Fjakarta-expression-language-spec-5.0.html%23coerce-a-to-functional-interface-method-invocation%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[7]/div[1]/div[3]/div[1]/p[1]/a[2]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[43]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 561,
+                "top": 14615,
+                "height": 32,
+                "width": 189
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/expression-language/5.0/jakarta-expression-language-spec-5.0.html#coerce-a-to-an-array-of-type-t\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fexpression-language%2F5.0%2Fjakarta-expression-language-spec-5.0.html%23coerce-a-to-an-array-of-type-t%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[7]/div[1]/div[4]/div[1]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[44]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 161,
+                "top": 14829,
+                "height": 32,
+                "width": 198
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/expression-language/5.0/apidocs/jakarta.el/jakarta/el/beanelresolver\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fexpression-language%2F5.0%2Fapidocs%2Fjakarta.el%2Fjakarta%2Fel%2Fbeanelresolver%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[7]/div[1]/div[4]/div[1]/p[1]/a[2]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[44]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 638,
+                "top": 14874,
+                "height": 32,
+                "width": 266
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/expression-language/5.0/apidocs/jakarta.el/jakarta/el/staticfieldelresolver\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fexpression-language%2F5.0%2Fapidocs%2Fjakarta.el%2Fjakarta%2Fel%2Fstaticfieldelresolver%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[7]/div[1]/div[6]/div[3]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[48]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 479,
+                "top": 15558,
+                "height": 32,
+                "width": 507
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/expression-language/5.0/apidocs/jakarta.el/module-summary.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fexpression-language%2F5.0%2Fapidocs%2Fjakarta.el%2Fmodule-summary.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[2]/div[1]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[50]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 16021,
+                "height": 77,
+                "width": 1759
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://github.com/jakartaee/faces/issues/1581\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fgithub.com%2Fjakartaee%2Ffaces%2Fissues%2F1581%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[4]/div[1]/dl[1]/dt[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/term[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 16561,
+                "height": 37,
+                "width": 378
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/faces/4.0/vdldoc/f/websocket.html#onerror\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ffaces%2F4.0%2Fvdldoc%2Ff%2Fwebsocket.html%23onerror%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[4]/div[1]/dl[1]/dt[2]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/term[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 16722,
+                "height": 37,
+                "width": 349
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/faces/4.0/vdldoc/h/inputfile#accept\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ffaces%2F4.0%2Fvdldoc%2Fh%2Finputfile%23accept%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[4]/div[1]/dl[1]/dt[3]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/term[3]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 16843,
+                "height": 37,
+                "width": 373
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/faces/4.0/vdldoc/h/inputfile#multiple\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ffaces%2F4.0%2Fvdldoc%2Fh%2Finputfile%23multiple%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[4]/div[1]/dl[1]/dd[3]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[54]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 783,
+                "top": 16890,
+                "height": 32,
+                "width": 104
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/multiple\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FHTML%2FAttributes%2Fmultiple%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[4]/div[1]/dl[1]/dt[4]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/term[4]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 16964,
+                "height": 37,
+                "width": 324
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/faces/4.0/vdldoc/h/inputtext#type\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ffaces%2F4.0%2Fvdldoc%2Fh%2Finputtext%23type%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[4]/div[1]/dl[1]/dd[4]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[55]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 437,
+                "top": 17011,
+                "height": 32,
+                "width": 232
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FLearn%2FForms%2FHTML5_input_types%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[5]/div[1]/dl[1]/dt[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/term[5]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 17203,
+                "height": 37,
+                "width": 300
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/faces/4.0/vdldoc/f/selectitemgroups\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ffaces%2F4.0%2Fvdldoc%2Ff%2Fselectitemgroups%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[5]/div[1]/dl[1]/dd[1]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[56]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 494,
+                "top": 17291,
+                "height": 32,
+                "width": 487
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FHTML%2FElement%2Foptgroup%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[5]/div[1]/dl[1]/dt[2]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/term[6]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 17366,
+                "height": 37,
+                "width": 287
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/faces/4.0/vdldoc/f/selectitemgroup\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ffaces%2F4.0%2Fvdldoc%2Ff%2Fselectitemgroup%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[6]/div[1]/dl[1]/dt[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/term[7]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 17605,
+                "height": 37,
+                "width": 394
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/faces/4.0/apidocs/jakarta/faces/context/facescontext#getLifecycle()\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ffaces%2F4.0%2Fapidocs%2Fjakarta%2Ffaces%2Fcontext%2Ffacescontext%23getLifecycle()%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[6]/div[1]/dl[1]/dt[2]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/term[8]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 17726,
+                "height": 37,
+                "width": 368
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/faces/4.0/apidocs/jakarta/faces/component/uiviewroot#getDoctype()\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ffaces%2F4.0%2Fapidocs%2Fjakarta%2Ffaces%2Fcomponent%2Fuiviewroot%23getDoctype()%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[7]/div[1]/dl[1]/dt[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/term[9]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 17965,
+                "height": 37,
+                "width": 763
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/faces/4.0/apidocs/jakarta/faces/webapp/facesservlet#AUTOMATIC_EXTENSIONLESS_MAPPING_PARAM_NAME\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ffaces%2F4.0%2Fapidocs%2Fjakarta%2Ffaces%2Fwebapp%2Ffacesservlet%23AUTOMATIC_EXTENSIONLESS_MAPPING_PARAM_NAME%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[7]/div[1]/dl[1]/dt[2]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/term[10]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 18085,
+                "height": 37,
+                "width": 661
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/faces/4.0/apidocs/jakarta/faces/lifecycle/clientwindow#NUMBER_OF_CLIENT_WINDOWS_PARAM_NAME\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ffaces%2F4.0%2Fapidocs%2Fjakarta%2Ffaces%2Flifecycle%2Fclientwindow%23NUMBER_OF_CLIENT_WINDOWS_PARAM_NAME%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[7]/div[1]/dl[1]/dt[3]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/term[11]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 18248,
+                "height": 37,
+                "width": 712
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://myfaces.apache.org/#/core40\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fmyfaces.apache.org%2F%23%2Fcore40%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[8]/div[1]/dl[1]/dt[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/term[12]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 18566,
+                "height": 37,
+                "width": 334
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/faces/4.0/apidocs/jakarta/faces/lifecycle/clientwindowscoped\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ffaces%2F4.0%2Fapidocs%2Fjakarta%2Ffaces%2Flifecycle%2Fclientwindowscoped%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[10]/div[1]/ul[1]/li[1]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/list[8]/listitem[1]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1174,
+                "top": 19733,
+                "height": 32,
+                "width": 277
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://github.com/jakartaee/faces/issues/1552\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fgithub.com%2Fjakartaee%2Ffaces%2Fissues%2F1552%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[10]/div[1]/ul[1]/li[5]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/list[8]/listitem[5]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 244,
+                "top": 20321,
+                "height": 32,
+                "width": 406
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/faces/4.0/vdldoc/f/ajax.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ffaces%2F4.0%2Fvdldoc%2Ff%2Fajax.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[10]/div[1]/ul[1]/li[5]/p[1]/a[2]",
+                "aria": "/document[1]/main[1]/article[1]/list[8]/listitem[5]/paragraph[1]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 710,
+                "top": 20321,
+                "height": 32,
+                "width": 277
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://github.com/jakartaee/faces/issues/1567\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fgithub.com%2Fjakartaee%2Ffaces%2Fissues%2F1567%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[10]/div[1]/ul[1]/li[6]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/list[8]/listitem[6]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 482,
+                "top": 20444,
+                "height": 32,
+                "width": 503
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/servlet/6.0/apidocs/jakarta.servlet/jakarta/servlet/http/cookie#setAttribute(java.lang.String,java.lang\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fservlet%2F6.0%2Fapidocs%2Fjakarta.servlet%2Fjakarta%2Fservlet%2Fhttp%2Fcookie%23setAttribute(java.lang.String%2Cjava.lang%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[11]/div[2]/ul[1]/li[3]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/list[9]/listitem[3]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1431,
+                "top": 21070,
+                "height": 32,
+                "width": 159
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/faces/3.0/apidocs/jakarta/faces/el/package-summary.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ffaces%2F3.0%2Fapidocs%2Fjakarta%2Ffaces%2Fel%2Fpackage-summary.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[11]/div[2]/ul[1]/li[5]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/list[9]/listitem[5]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 935,
+                "top": 21318,
+                "height": 32,
+                "width": 487
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/faces/3.0/apidocs/jakarta/faces/application/statemanager\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ffaces%2F3.0%2Fapidocs%2Fjakarta%2Ffaces%2Fapplication%2Fstatemanager%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[11]/div[2]/ul[1]/li[6]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/list[9]/listitem[6]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 148,
+                "top": 21397,
+                "height": 78,
+                "width": 1730
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/faces/3.0/apidocs/jakarta/faces/view/facelets/resourceresolver\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ffaces%2F3.0%2Fapidocs%2Fjakarta%2Ffaces%2Fview%2Ffacelets%2Fresourceresolver%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[8]/div[1]/div[11]/div[3]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[68]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 696,
+                "top": 21602,
+                "height": 32,
+                "width": 277
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://myfaces.apache.org/#/news\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fmyfaces.apache.org%2F%23%2Fnews%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[9]/div[1]/div[2]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[70]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 479,
+                "top": 22101,
+                "height": 32,
+                "width": 359
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/mail/2.1/jakarta-mail-spec-2.1.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fmail%2F2.1%2Fjakarta-mail-spec-2.1.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[10]/div[1]/div[2]/div[1]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[72]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 871,
+                "top": 22705,
+                "height": 32,
+                "width": 755
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/restful-ws/3.1/jakarta-restful-ws-spec-3.1.html#consuming_multipart_formdata\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Frestful-ws%2F3.1%2Fjakarta-restful-ws-spec-3.1.html%23consuming_multipart_formdata%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[10]/div[1]/div[6]/div[1]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[81]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 386,
+                "top": 25002,
+                "height": 32,
+                "width": 755
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/restful-ws/3.1/jakarta-restful-ws-spec-3.1.html#services\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Frestful-ws%2F3.1%2Fjakarta-restful-ws-spec-3.1.html%23services%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[11]/div[1]/div[1]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[86]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 356,
+                "top": 26510,
+                "height": 32,
+                "width": 403
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/security/3.0/jakarta-security-spec-3.0.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fsecurity%2F3.0%2Fjakarta-security-spec-3.0.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[11]/div[1]/div[1]/p[1]/a[3]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[86]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 26558,
+                "height": 32,
+                "width": 566
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/security/3.0/apidocs/jakarta.security/jakarta/security/enterprise/authentication/mechanism/http/openidauthenticationmechanismdefinition\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fsecurity%2F3.0%2Fapidocs%2Fjakarta.security%2Fjakarta%2Fsecurity%2Fenterprise%2Fauthentication%2Fmechanism%2Fhttp%2Fopenidauthenticationmechanismdefinition%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[11]/div[1]/div[2]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[87]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 479,
+                "top": 26761,
+                "height": 32,
+                "width": 346
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/security/3.0/apidocs/jakarta.security/module-summary.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fsecurity%2F3.0%2Fapidocs%2Fjakarta.security%2Fmodule-summary.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[12]/div[1]/div[1]/p[1]/a[2]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[88]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 863,
+                "top": 27007,
+                "height": 32,
+                "width": 297
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/pages/3.1/jakarta-server-pages-spec-3.1.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fpages%2F3.1%2Fjakarta-server-pages-spec-3.1.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[12]/div[1]/div[1]/p[1]/a[3]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[88]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1220,
+                "top": 27007,
+                "height": 32,
+                "width": 395
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/tags/3.0/jakarta-tags-spec-3.0.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ftags%2F3.0%2Fjakarta-tags-spec-3.0.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[12]/div[1]/div[2]/div[6]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[92]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 432,
+                "top": 28071,
+                "height": 32,
+                "width": 286
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/pages/3.1/jakarta-server-pages-spec-3.1.html#_Unknown_EL_Identifiers\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fpages%2F3.1%2Fjakarta-server-pages-spec-3.1.html%23_Unknown_EL_Identifiers%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[12]/div[1]/div[3]/div[2]/dl[1]/dd[1]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[94]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1537,
+                "top": 28516,
+                "height": 32,
+                "width": 217
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/pages/3.1/apidocs/jakarta.servlet.jsp/jakarta/servlet/jsp/el/importelresolver\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fpages%2F3.1%2Fapidocs%2Fjakarta.servlet.jsp%2Fjakarta%2Fservlet%2Fjsp%2Fel%2Fimportelresolver%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[12]/div[1]/div[3]/div[2]/dl[1]/dd[2]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[95]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1249,
+                "top": 28678,
+                "height": 32,
+                "width": 256
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/pages/3.1/apidocs/jakarta.servlet.jsp/jakarta/servlet/jsp/el/notfoundelresolver\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fpages%2F3.1%2Fapidocs%2Fjakarta.servlet.jsp%2Fjakarta%2Fservlet%2Fjsp%2Fel%2Fnotfoundelresolver%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[12]/div[1]/div[5]/div[3]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[98]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 479,
+                "top": 29570,
+                "height": 32,
+                "width": 206
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/tags/3.0/tagdocs/\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Ftags%2F3.0%2Ftagdocs%2F%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[13]/div[1]/div[3]/div[1]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[107]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1027,
+                "top": 32924,
+                "height": 32,
+                "width": 93
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.rfc-editor.org/rfc/rfc6265\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.rfc-editor.org%2Frfc%2Frfc6265%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_scrollable_tabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[13]/div[1]/div[3]/div[4]/div[1]/div[1]/pre[1]",
+                "aria": "/document[1]/main[1]/article[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_scrollable",
+            "message": "The scrollable element <pre> with non-interactive content is not tabbable",
+            "messageArgs": [
+                "pre"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 33298,
+                "height": 106,
+                "width": 1784
+            },
+            "snippet": "<pre>",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "violation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/element_scrollable_tabbable.html#%7B%22message%22%3A%22The%20scrollable%20element%20%3Cpre%3E%20with%20non-interactive%20content%20is%20not%20tabbable%22%2C%22snippet%22%3A%22%3Cpre%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_scrollable%22%2C%22ruleId%22%3A%22element_scrollable_tabbable%22%2C%22msgArgs%22%3A%5B%22pre%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[13]/div[1]/div[5]/div[8]/div[1]/div[1]/pre[1]/code[1]/span[1]/span[4]/span[1]/span[1]",
+                "aria": "/document[1]/main[1]/article[1]/code[14]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.34 with its background is less than the WCAG AA minimum requirements for text of size 14px and weight of 400",
+            "messageArgs": [
+                "4.34",
+                14,
+                400,
+                "#008080",
+                "#f1f4fe",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 392,
+                "top": 36831,
+                "height": 32,
+                "width": 454
+            },
+            "snippet": "<span class=\"hljs-attr\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "violation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.34%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2014px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22hljs-attr%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.34%22%2C14%2C400%2C%22%23008080%22%2C%22%23f1f4fe%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[13]/div[1]/div[7]/div[5]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[124]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 479,
+                "top": 38656,
+                "height": 32,
+                "width": 333
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/servlet/6.0/apidocs/jakarta.servlet/module-summary.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fservlet%2F6.0%2Fapidocs%2Fjakarta.servlet%2Fmodule-summary.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[14]/div[1]/div[2]/div[1]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[126]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 39164,
+                "height": 32,
+                "width": 867
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/websocket/2.1/apidocs/server/jakarta/websocket/server/servercontainer#upgradeHttpToWebSocket(java.lang.Object,java.lang.Object,jakarta.websocket.server.ServerEndpointConfig,java.util.Map)\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fwebsocket%2F2.1%2Fapidocs%2Fserver%2Fjakarta%2Fwebsocket%2Fserver%2Fservercontainer%23upgradeHttpToWebSocket(java.lang.Object%2Cjava.lang.Object%2Cjakarta.websocket.server.ServerEndpointConfig%2Cjava.util.Map)%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[14]/div[1]/div[3]/div[1]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[127]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 704,
+                "top": 39423,
+                "height": 32,
+                "width": 186
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/websocket/2.1/apidocs/server/jakarta/websocket/session#getUserProperties()\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fwebsocket%2F2.1%2Fapidocs%2Fserver%2Fjakarta%2Fwebsocket%2Fsession%23getUserProperties()%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[14]/div[1]/div[3]/div[1]/p[1]/a[2]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[127]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 250,
+                "top": 39514,
+                "height": 32,
+                "width": 672
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/websocket/2.1/apidocs/server/jakarta/websocket/server/serverendpointconfig.configurator#modifyHandshake(jakarta.websocket.server.ServerEndpointConfig,jakarta.websocket.server.HandshakeRequest,jakarta.websocket.HandshakeResponse)\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fwebsocket%2F2.1%2Fapidocs%2Fserver%2Fjakarta%2Fwebsocket%2Fserver%2Fserverendpointconfig.configurator%23modifyHandshake(jakarta.websocket.server.ServerEndpointConfig%2Cjakarta.websocket.server.HandshakeRequest%2Cjakarta.websocket.HandshakeResponse)%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[14]/div[1]/div[3]/div[2]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[128]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 228,
+                "top": 39595,
+                "height": 32,
+                "width": 411
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/websocket/2.1/apidocs/client/jakarta/websocket/session#getUserProperties()\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fwebsocket%2F2.1%2Fapidocs%2Fclient%2Fjakarta%2Fwebsocket%2Fsession%23getUserProperties()%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[14]/div[1]/div[4]/div[1]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[129]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 39947,
+                "height": 32,
+                "width": 733
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/websocket/2.1/apidocs/client/jakarta/websocket/clientendpointconfig.builder#sslContext(javax.net.ssl.SSLContext)\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fwebsocket%2F2.1%2Fapidocs%2Fclient%2Fjakarta%2Fwebsocket%2Fclientendpointconfig.builder%23sslContext(javax.net.ssl.SSLContext)%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[14]/div[1]/div[5]/div[2]/ul[1]/li[1]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/list[17]/listitem[1]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 148,
+                "top": 40385,
+                "height": 32,
+                "width": 1185
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/websocket/2.1/apidocs/server/jakarta/websocket/server/serverendpointconfig.configurator#getContainerDefaultConfigurator()\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fwebsocket%2F2.1%2Fapidocs%2Fserver%2Fjakarta%2Fwebsocket%2Fserver%2Fserverendpointconfig.configurator%23getContainerDefaultConfigurator()%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[14]/div[1]/div[5]/div[2]/ul[1]/li[3]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/list[17]/listitem[3]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 201,
+                "top": 40586,
+                "height": 32,
+                "width": 528
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/websocket/2.1/apidocs/client/jakarta/websocket/session#getRequestURI()\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fwebsocket%2F2.1%2Fapidocs%2Fclient%2Fjakarta%2Fwebsocket%2Fsession%23getRequestURI()%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[14]/div[1]/div[5]/div[3]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[131]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 479,
+                "top": 40667,
+                "height": 32,
+                "width": 278
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/websocket/2.1/jakarta-websocket-spec-2.1.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fwebsocket%2F2.1%2Fjakarta-websocket-spec-2.1.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/article[1]/div[15]/div[1]/div[3]/div[3]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[136]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 479,
+                "top": 42008,
+                "height": 32,
+                "width": 459
+            },
+            "snippet": "<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://jakarta.ee/specifications/xml-binding/4.0/jakarta-xml-binding-spec-4.0.html\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noopener%20noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fjakarta.ee%2Fspecifications%2Fxml-binding%2F4.0%2Fjakarta-xml-binding-spec-4.0.html%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1284,
+                "top": 43313,
+                "height": 90,
+                "width": 90
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" id=\"footer_github_link\" href=\"https://github.com/OpenLiberty/\" class=\"footer_round_btn\" aria-label=\"Github\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20id%3D%5C%22footer_github_link%5C%22%20href%3D%5C%22https%3A%2F%2Fgithub.com%2FOpenLiberty%2F%5C%22%20class%3D%5C%22footer_round_btn%5C%22%20aria-label%3D%5C%22Github%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1416,
+                "top": 43313,
+                "height": 90,
+                "width": 90
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" id=\"footer_stackoverflow_link\" href=\"https://stackoverflow.com/questions/tagged/open-liberty\" class=\"footer_round_btn\" aria-label=\"Open Liberty questions on Stack Overflow\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20id%3D%5C%22footer_stackoverflow_link%5C%22%20href%3D%5C%22https%3A%2F%2Fstackoverflow.com%2Fquestions%2Ftagged%2Fopen-liberty%5C%22%20class%3D%5C%22footer_round_btn%5C%22%20aria-label%3D%5C%22Open%20Liberty%20questions%20on%20Stack%20Overflow%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/a[3]",
+                "aria": "/document[1]/contentinfo[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1548,
+                "top": 43313,
+                "height": 90,
+                "width": 90
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" id=\"footer_groupsio_link\" href=\"https://groups.io/g/openliberty\" class=\"footer_round_btn\" aria-label=\"Open Liberty Groups.io\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20id%3D%5C%22footer_groupsio_link%5C%22%20href%3D%5C%22https%3A%2F%2Fgroups.io%2Fg%2Fopenliberty%5C%22%20class%3D%5C%22footer_round_btn%5C%22%20aria-label%3D%5C%22Open%20Liberty%20Groups.io%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/a[4]",
+                "aria": "/document[1]/contentinfo[1]/link[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1680,
+                "top": 43313,
+                "height": 90,
+                "width": 90
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" id=\"footer_gitter_link\" href=\"https://app.gitter.im/#/room/#OpenLiberty_development:gitter.im\" class=\"footer_round_btn\" aria-label=\"Open Liberty Gitter\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20id%3D%5C%22footer_gitter_link%5C%22%20href%3D%5C%22https%3A%2F%2Fapp.gitter.im%2F%23%2Froom%2F%23OpenLiberty_development%3Agitter.im%5C%22%20class%3D%5C%22footer_round_btn%5C%22%20aria-label%3D%5C%22Open%20Liberty%20Gitter%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[2]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 577,
+                "top": 43471,
+                "height": 26,
+                "width": 135
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" id=\"footer_privacy_policy_link\" href=\"https://www.ibm.com/privacy/\" class=\"left_footer_link\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20id%3D%5C%22footer_privacy_policy_link%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.ibm.com%2Fprivacy%2F%5C%22%20class%3D%5C%22left_footer_link%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[2]/div[1]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 733,
+                "top": 43471,
+                "height": 26,
+                "width": 73
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" id=\"footer_license_link\" href=\"https://github.com/OpenLiberty/open-liberty/blob/release/LICENSE\" class=\"left_footer_link\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20id%3D%5C%22footer_license_link%5C%22%20href%3D%5C%22https%3A%2F%2Fgithub.com%2FOpenLiberty%2Fopen-liberty%2Fblob%2Frelease%2FLICENSE%5C%22%20class%3D%5C%22left_footer_link%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_target_warning",
+            "value": [
+                "RECOMMENDATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[2]/div[1]/a[3]",
+                "aria": "/document[1]/contentinfo[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_warn",
+            "message": "Inform the user when their input action will open a new window",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 826,
+                "top": 43471,
+                "height": 26,
+                "width": 57
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" id=\"footer_logos_link\" href=\"https://github.com/OpenLiberty/logos\" class=\"left_footer_link\">",
+            "category": "Accessibility",
+            "ignored": false,
+            "level": "potentialrecommendation",
+            "help": "https://able.ibm.com/rules/archives/2024.10.01/doc/en-US/a_target_warning.html#%7B%22message%22%3A%22Inform%20the%20user%20when%20their%20input%20action%20will%20open%20a%20new%20window%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20id%3D%5C%22footer_logos_link%5C%22%20href%3D%5C%22https%3A%2F%2Fgithub.com%2FOpenLiberty%2Flogos%5C%22%20class%3D%5C%22left_footer_link%5C%22%3E%22%2C%22value%22%3A%5B%22RECOMMENDATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_warn%22%2C%22ruleId%22%3A%22a_target_warning%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 8676,
+    "ruleTime": 16417,
+    "nls": {
+        "img_alt_background": {
+            "0": "Background images that convey important information must have a text alternative that describes the image",
+            "Manual_1": "Verify important background image information has a text alternative in system high contrast mode"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "style_highcontrast_visible": {
+            "0": "Windows high contrast mode must be supported when using CSS to include, position or alter non-decorative content",
+            "Manual_1": "Confirm Windows high contrast mode is supported when using CSS to include, position or alter non-decorative content"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "style_focus_visible": {
+            "0": "The keyboard focus indicator should be visible when default border or outline is modified by CSS",
+            "potential_focus_not_visible": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'"
+        },
+        "label_name_visible": {
+            "0": "Accessible name must match or contain the visible label text",
+            "Fail_1": "Accessible name does not match or contain the visible label text"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "fail_contrast": "Text contrast of {0} with its background is less than the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "aria_role_redundant": {
+            "0": "An explicitly-assigned ARIA role should not be redundant with the implicit role of the element",
+            "fail_redundant": "The explicitly-assigned ARIA role \"{0}\" is redundant with the implicit role of the element <{1}>"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        },
+        "a_target_warning": {
+            "0": "Users should be warned in advance if their input action will open a new window",
+            "potential_warn": "Inform the user when their input action will open a new window"
+        },
+        "element_scrollable_tabbable": {
+            "0": "Scrollable elements should be tabbable or contain tabbable content",
+            "fail_scrollable": "The scrollable element <{0}> with non-interactive content is not tabbable"
+        }
+    },
+    "summary": {
+        "counts": {
+            "violation": 10,
+            "potentialviolation": 4,
+            "recommendation": 1,
+            "potentialrecommendation": 64,
+            "manual": 2,
+            "pass": 8595,
+            "ignored": 0,
+            "elements": 1908,
+            "elementsViolation": 10,
+            "elementsViolationReview": 13
+        },
+        "scanTime": 19233,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "IBM_Accessibility"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation",
+            "recommendation",
+            "potentialrecommendation",
+            "manual"
+        ],
+        "startScan": 1730217987630,
+        "URL": "https://openliberty.io/docs/latest/reference/diff/jakarta-ee10-diff.html"
+    },
+    "scanID": "62ea3112-d8af-43e9-ad64-39eadf046d70",
+    "toolID": "cypress-accessibility-checker-v3.1.71",
+    "label": "./JAKARTA_EE/other_samples/difference-100-91"
+}
