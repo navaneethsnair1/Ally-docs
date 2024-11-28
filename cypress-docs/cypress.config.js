@@ -6,6 +6,7 @@ const yaml = require('js-yaml');
 module.exports = defineConfig({
   e2e: {
     supportFile: "/__w/Ally-docs/Ally-docs/cypress-docs/cypress/support/e2e.js",
+    specPattern: '/__w/Ally-docs/Ally-docs/cypress-docs/cypress/e2e/*.cy.js',
     setupNodeEvents(on, config) {
       on('task', {
         accessibilityChecker: require('cypress-accessibility-checker/plugin')
