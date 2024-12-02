@@ -17,4 +17,4 @@ label:
 outputFilenameTimestamp: true
 baselineFolder: test/baselines
 cacheFolder: /tmp/accessibility-checker
-outputFolder: results/OL_API
+outputFolder: results

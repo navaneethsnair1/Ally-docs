@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: ol_api_compliance
-          path: ol_api_compliance.json
+          path: /__w/Ally-docs/Ally-docs/cypress-docs/results/OL_API/ol_api.json
   # trial:
   #   runs-on: ubuntu-latest
   #   container: cypress/included:12.5.1
