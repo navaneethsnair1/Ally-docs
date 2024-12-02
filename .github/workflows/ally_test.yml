@@ -26,6 +26,12 @@ jobs:
       #   with:
       #       name: cypress-videos
       #       path: /__w/Ally-docs/Ally-docs/cypress-docs/cypress/videos/ol_api.cy.js.mp4
+      - name: Upload Compliance Results
+        if: always() # Upload even if tests fail
+        uses: actions/upload-artifact@v3
+        with:
+          name: ol_api_compliance
+          path: ol_api_compliance.json
   # trial:
   #   runs-on: ubuntu-latest
   #   container: cypress/included:12.5.1
