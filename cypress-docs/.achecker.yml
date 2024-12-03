@@ -14,7 +14,7 @@ outputFormat:
   - json
 label:
   - master
-outputFilenameTimestamp: true
+outputFilenameTimestamp: false
 baselineFolder: test/baselines
 cacheFolder: /tmp/accessibility-checker
 outputFolder: results

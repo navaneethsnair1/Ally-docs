@@ -30,8 +30,8 @@ jobs:
         if: always() # Upload even if tests fail
         uses: actions/upload-artifact@v3
         with:
-          name: ol_api_compliance
-          path: /__w/Ally-docs/Ally-docs/cypress-docs/results/OL_API/ol_api.json
+          name: ol_api_compliance_summary
+          path: /__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json
   # trial:
   #   runs-on: ubuntu-latest
   #   container: cypress/included:12.5.1
