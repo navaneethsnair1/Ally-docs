@@ -6,10 +6,10 @@ failLevels:
   - potentialviolation
 reportLevels:
   - violation
-  - potentialviolation
-  - recommendation
-  - potentialrecommendation
-  - manual
+  # - potentialviolation
+  # - recommendation
+  # - potentialrecommendation
+  # - manual
 outputFormat:
   - json
 label:
