@@ -12,9 +12,9 @@ jobs:
     container: cypress/included:13.9.0
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Run first test file
-        run: cypress run --browser chrome --env JDK_VERSION="1.8.0_311" --config-file /__w/Ally-docs/Ally-docs/cypress-docs/cypress.config.js --spec "/__w/Ally-docs/Ally-docs/cypress-docs/cypress/e2e/gha.cy.js"
+        run: cypress run --browser chrome --env JDK_VERSION="1.8.0_311" --config-file /__w/Ally-docs/Ally-docs/cypress-docs/cypress.config.js --spec "/__w/Ally-docs/Ally-docs/cypress-docs/cypress/e2e/ol_api.cy.js"
       # - uses: actions/upload-artifact@v3
       #   if: failure()
       #   with:
@@ -28,7 +28,7 @@ jobs:
       #       path: /__w/Ally-docs/Ally-docs/cypress-docs/cypress/videos/ol_api.cy.js.mp4
       - name: Upload Compliance Results
         if: always() # Upload even if tests fail
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ol_api_compliance_summary
           path: /__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json
