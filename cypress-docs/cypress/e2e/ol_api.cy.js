@@ -55,12 +55,12 @@ describe('Openliberty API Accesibility Tests', () => {
     cy.getCompliance("./OL_API/ol_api_exception2");
   })
 
-  it.only('Annotation', () => {
+  it('Annotation', () => {
     cy.visit('https://openliberty.io/docs/latest/reference/javadoc/api/grpc-1.0.io.openliberty.grpc.annotation.html?path=24.0.0.3/io.openliberty.grpc.1.0_1.0-javadoc/io/openliberty/grpc/annotation/GrpcService.html');
     cy.getCompliance("./OL_API/ol_api_annotation1");
   })
 
-  it.only('Enum', () => {
+  it('Enum', () => {
     cy.visit('https://openliberty.io/docs/latest/reference/javadoc/api/j2eeManagement-1.1.com.ibm.websphere.management.j2ee.html?path=24.0.0.3/com.ibm.websphere.appserver.api.j2eemanagement_1.1-javadoc/com/ibm/websphere/management/j2ee/J2EEManagementObjectNameFactory.ResourceType.html');
     cy.getCompliance("./OL_API/ol_api_enum1");
     cy.visit('https://openliberty.io/docs/latest/reference/javadoc/api/distributedMap-1.0.com.ibm.wsspi.cache.html?path=24.0.0.3/com.ibm.websphere.appserver.api.distributedMap_2.0-javadoc/com/ibm/wsspi/cache/CacheConfig.EvictorAlgorithmType.html');
