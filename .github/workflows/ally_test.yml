@@ -3,7 +3,7 @@ name: Docs Accessibility Tests
 on:
   push:
     branches:
-      - main
+      - trail
   pull_request:
  
 jobs:
