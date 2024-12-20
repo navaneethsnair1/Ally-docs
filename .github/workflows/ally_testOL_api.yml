@@ -3,7 +3,7 @@ name: Docs Ally Tests- OL API
 on:
   push:
     branches:
-      - trail
+      - main
   pull_request:
  
 jobs:

@@ -16,21 +16,21 @@ jobs:
       - name: Clear cache
         run: rm -rf ~/.npm ~/.cache/pip node_modules     
       - name: Run first test file
-        run: cypress run --browser chrome --env JDK_VERSION="1.8.0_311" --config-file /__w/Ally-docs/Ally-docs/cypress-docs/cypress.config.js --spec "/__w/Ally-docs/Ally-docs/cypress-docs/cypress/e2e/gha.cy.js"
+        run: cypress run --browser chrome --env JDK_VERSION="1.8.0_311" --config-file ${{ github.workspace }}/cypress-docs/cypress.config.js --spec "${{ github.workspace }}/cypress-docs/cypress/e2e/gha.cy.js"
       # - uses: actions/upload-artifact@v3
       #   if: failure()
       #   with:
       #       name: cypress-screenshots
-      #       path: /__w/Ally-docs/Ally-docs/cypress-docs/cypress/screenshots/ol_api.cy.js
+      #       path: ${{ github.workspace }}/cypress-docs/cypress/screenshots/ol_api.cy.js
       
       # - uses: actions/upload-artifact@v3
       #   if: failure()
       #   with:
       #       name: cypress-videos
-      #       path: /__w/Ally-docs/Ally-docs/cypress-docs/cypress/videos/ol_api.cy.js.mp4
+      #       path: ${{ github.workspace }}/cypress-docs/cypress/videos/ol_api.cy.js.mp4
       - name: Wait for File Creation
         run: |
-          while [ ! -f /__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json ]; do
+          while [ ! -f ${{ github.workspace }}/cypress-docs/results/summary.json ]; do
             echo "Waiting for summary.json to be created..."
             sleep 1
           done
@@ -40,7 +40,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ol_api_compliance_summary
-          path: /__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json
+          path: ${{ github.workspace }}/cypress-docs/results/summary.json
   # trial:
   #   runs-on: ubuntu-latest
   #   container: cypress/included:12.5.1
