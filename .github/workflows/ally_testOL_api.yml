@@ -17,6 +17,13 @@ jobs:
         run: rm -rf ~/.npm ~/.cache/pip node_modules   
       - name: Run first test file
         run: cypress run --browser chrome --env JDK_VERSION="1.8.0_311" --config-file /__w/Ally-docs/Ally-docs/cypress-docs/cypress.config.js --spec "/__w/Ally-docs/Ally-docs/cypress-docs/cypress/e2e/gha.cy.js"
+      - name: Wait for File Creation
+        run: |
+          while [ ! -f /__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json ]; do
+            echo "Waiting for summary.json to be created..."
+            sleep 1
+          done
+          echo "summary.json is now available."  
       - name: Upload Compliance Results
         if: always() # Upload even if tests fail
         uses: actions/upload-artifact@v3
