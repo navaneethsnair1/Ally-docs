@@ -28,6 +28,13 @@ jobs:
       #   with:
       #       name: cypress-videos
       #       path: /__w/Ally-docs/Ally-docs/cypress-docs/cypress/videos/ol_api.cy.js.mp4
+      - name: Wait for File Creation
+        run: |
+          while [ ! -f /__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json ]; do
+            echo "Waiting for summary.json to be created..."
+            sleep 1
+          done
+          echo "summary.json is now available."
       - name: Upload Compliance Results
         if: always() # Upload even if tests fail
         uses: actions/upload-artifact@v4
