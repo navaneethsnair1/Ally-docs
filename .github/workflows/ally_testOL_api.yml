@@ -28,21 +28,21 @@ jobs:
         if: success() 
         uses: actions/upload-artifact@v3
         with:
-          name: ol_api_compliance_summary
+          name: ol_api_overview2
           path: /__w/Ally-docs/Ally-docs/cypress-docs/results//OL_API/ol_api_overview2.json
           if-no-files-found: warn
       - name: Upload Compliance Results
         if: success() 
         uses: actions/upload-artifact@v3
         with:
-          name: ol_api_compliance_summary
+          name: ol_api_package1
           path: /__w/Ally-docs/Ally-docs/cypress-docs/results//OL_API/ol_api_package1.json
           if-no-files-found: warn    
       - name: Upload Compliance Results
         if: success() 
         uses: actions/upload-artifact@v3
         with:
-            name: ol_api_compliance_summary
+            name: ol_api_package2
             path: /__w/Ally-docs/Ally-docs/cypress-docs/results//OL_API/ol_api_package2.json
             if-no-files-found: warn    
   
