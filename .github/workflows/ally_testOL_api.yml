@@ -51,5 +51,6 @@ jobs:
         with:
             name: Summary File
             path: /__w/Ally-docs/Ally-docs/cypress-docs/results/summary*.json
-            if-no-files-found: warn            
+            if-no-files-found: warn      
+            include-hidden-files: true      
   
