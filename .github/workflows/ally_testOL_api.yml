@@ -45,7 +45,7 @@ jobs:
             name: ol_api_package2
             path: /__w/Ally-docs/Ally-docs/cypress-docs/results/OL_API/ol_api_package2.json
             if-no-files-found: warn    
-      - name: Upload Compliance Results
+      - name: Upload Summary Results
         if: success() 
         uses: actions/upload-artifact@v3
         with:
