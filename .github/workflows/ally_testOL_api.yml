@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: Debug - List files
+        run: ls -R ${{ github.workspace }}  
       # - name: Clear cache
       #   run: rm -rf ~/.npm ~/.cache/pip node_modules   
       - name: Run first test file
@@ -45,8 +47,6 @@ jobs:
       #       name: ol_api_package2
       #       path: /__w/Ally-docs/Ally-docs/cypress-docs/results/OL_API/ol_api_package2.json
       #       if-no-files-found: warn    
-      - name: Debug - List files
-        run: ls -R ${{ github.workspace }}
       - name: Upload Summary Results
         if: success() 
         uses: actions/upload-artifact@v4
