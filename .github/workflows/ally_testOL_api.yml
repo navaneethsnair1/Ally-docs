@@ -46,7 +46,7 @@ jobs:
       #       path: /__w/Ally-docs/Ally-docs/cypress-docs/results/OL_API/ol_api_package2.json
       #       if-no-files-found: warn    
       - name: Debug - List files
-        run: ls -R /__w/Ally-docs/Ally-docs
+        run: ls -R /__w/Ally-docs/Ally-docs/cypress-docs/results
       - name: Upload Summary Results
         if: success() 
         uses: actions/upload-artifact@v4
