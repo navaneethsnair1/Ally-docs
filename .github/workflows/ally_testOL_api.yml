@@ -13,8 +13,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      # - name: Debug - List files
-      #   run: ls -R ${{ github.workspace }}  
       # - name: Clear cache
       #   run: rm -rf ~/.npm ~/.cache/pip node_modules   
       - name: Run first test file
@@ -54,5 +52,7 @@ jobs:
             name: Summary File
             path: /__w/Ally-docs/Ally-docs/cypress-docs/results/summary*.json
             if-no-files-found: warn      
-            include-hidden-files: true      
+            include-hidden-files: true  
+      - name: Debug - List files
+        run: ls -R ${{ github.workspace }}        
   
