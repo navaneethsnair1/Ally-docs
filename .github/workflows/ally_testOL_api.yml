@@ -24,27 +24,29 @@ jobs:
     #         sleep 1
     #       done
     #       echo "summary.json is now available."  
-      - name: Upload Compliance Results
-        if: success() 
-        uses: actions/upload-artifact@v3
-        with:
-          name: ol_api_overview2
-          path: /__w/Ally-docs/Ally-docs/cypress-docs/results/OL_API/ol_api_overview2.json
-          if-no-files-found: warn
-      - name: Upload Compliance Results
-        if: success() 
-        uses: actions/upload-artifact@v3
-        with:
-          name: ol_api_package1
-          path: /__w/Ally-docs/Ally-docs/cypress-docs/results/OL_API/ol_api_package1.json
-          if-no-files-found: warn    
-      - name: Upload Compliance Results
-        if: success() 
-        uses: actions/upload-artifact@v3
-        with:
-            name: ol_api_package2
-            path: /__w/Ally-docs/Ally-docs/cypress-docs/results/OL_API/ol_api_package2.json
-            if-no-files-found: warn    
+      # - name: Upload Compliance Results
+      #   if: success() 
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: ol_api_overview2
+      #     path: /__w/Ally-docs/Ally-docs/cypress-docs/results/OL_API/ol_api_overview2.json
+      #     if-no-files-found: warn
+      # - name: Upload Compliance Results
+      #   if: success() 
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: ol_api_package1
+      #     path: /__w/Ally-docs/Ally-docs/cypress-docs/results/OL_API/ol_api_package1.json
+      #     if-no-files-found: warn    
+      # - name: Upload Compliance Results
+      #   if: success() 
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #       name: ol_api_package2
+      #       path: /__w/Ally-docs/Ally-docs/cypress-docs/results/OL_API/ol_api_package2.json
+      #       if-no-files-found: warn    
+      - name: Debug - List files
+        run: ls -R ${{ github.workspace }}
       - name: Upload Summary Results
         if: success() 
         uses: actions/upload-artifact@v3
