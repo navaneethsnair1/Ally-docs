@@ -13,8 +13,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Debug - List files
-        run: ls -R ${{ github.workspace }}  
+      # - name: Debug - List files
+      #   run: ls -R ${{ github.workspace }}  
       # - name: Clear cache
       #   run: rm -rf ~/.npm ~/.cache/pip node_modules   
       - name: Run first test file
