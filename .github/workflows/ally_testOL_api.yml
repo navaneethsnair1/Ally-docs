@@ -29,7 +29,7 @@ jobs:
           --reporter json --reporter-options output=/__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json
 
       - name: Debug - List files
-        run: ls -R /__w/Ally-docs/Ally-docs
+        run: ls -R /__w/Ally-docs/Ally-docs/cypress-docs/results
 
       - name: Debug - Cypress Logs
         run: cat /__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json || echo "No summary file found"
