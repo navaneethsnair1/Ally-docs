@@ -13,54 +13,32 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      # - name: Clear cache
-      #   run: rm -rf ~/.npm ~/.cache/pip node_modules   
-      - name: Cleanup previous results  # Add this step
+
+      - name: Cleanup previous results
         run: rm -rf /__w/Ally-docs/Ally-docs/cypress-docs/results/*
+
+      - name: Cleanup Cypress Cache
+        run: rm -rf ~/.cache/Cypress
+
       - name: Run first test file
         run: |
-            cypress run --browser chrome --env JDK_VERSION="1.8.0_311" \
-            --config-file /__w/Ally-docs/Ally-docs/cypress-docs/cypress.config.js \
-            --spec "/__w/Ally-docs/Ally-docs/cypress-docs/cypress/e2e/gha.cy.js" \
-            --reporter json --reporter-options output=/__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json
+          cypress run --browser chrome --headed \
+          --env JDK_VERSION="1.8.0_311" \
+          --config-file /__w/Ally-docs/Ally-docs/cypress-docs/cypress.config.js \
+          --spec "/__w/Ally-docs/Ally-docs/cypress-docs/cypress/e2e/gha.cy.js" \
+          --reporter json --reporter-options output=/__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json
 
-    #   - name: Wait for File Creation
-    #     run: |
-    #       while [ ! -f /__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json ]; do
-    #         echo "Waiting for summary.json to be created..."
-    #         sleep 1
-    #       done
-    #       echo "summary.json is now available."  
-      # - name: Upload Compliance Results
-      #   if: success() 
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: ol_api_overview2
-      #     path: /__w/Ally-docs/Ally-docs/cypress-docs/results/OL_API/ol_api_overview2.json
-      #     if-no-files-found: warn
-      # - name: Upload Compliance Results
-      #   if: success() 
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: ol_api_package1
-      #     path: /__w/Ally-docs/Ally-docs/cypress-docs/results/OL_API/ol_api_package1.json
-      #     if-no-files-found: warn    
-      # - name: Upload Compliance Results
-      #   if: success() 
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #       name: ol_api_package2
-      #       path: /__w/Ally-docs/Ally-docs/cypress-docs/results/OL_API/ol_api_package2.json
-      #       if-no-files-found: warn    
       - name: Debug - List files
-        run: ls -R /__w/Ally-docs/Ally-docs/cypress-docs/results
+        run: ls -R /__w/Ally-docs/Ally-docs
+
+      - name: Debug - Cypress Logs
+        run: cat /__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json || echo "No summary file found"
+
       - name: Upload Summary Results
         if: success() 
         uses: actions/upload-artifact@v4
         with:
-            name: Summary File
-            path: /__w/Ally-docs/Ally-docs/cypress-docs/results/summary*.json
-            if-no-files-found: warn      
-            include-hidden-files: true  
-
-  
+          name: Summary File
+          path: /__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json
+          if-no-files-found: warn      
+          include-hidden-files: true 
