@@ -18,7 +18,12 @@ jobs:
       - name: Cleanup previous results  # Add this step
         run: rm -rf /__w/Ally-docs/Ally-docs/cypress-docs/results/*
       - name: Run first test file
-        run: cypress run --browser chrome --env JDK_VERSION="1.8.0_311" --config-file /__w/Ally-docs/Ally-docs/cypress-docs/cypress.config.js --spec "/__w/Ally-docs/Ally-docs/cypress-docs/cypress/e2e/gha.cy.js"
+        run: |
+            cypress run --browser chrome --env JDK_VERSION="1.8.0_311" \
+            --config-file /__w/Ally-docs/Ally-docs/cypress-docs/cypress.config.js \
+            --spec "/__w/Ally-docs/Ally-docs/cypress-docs/cypress/e2e/gha.cy.js" \
+            --reporter json --reporter-options output=/__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json
+
     #   - name: Wait for File Creation
     #     run: |
     #       while [ ! -f /__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json ]; do
