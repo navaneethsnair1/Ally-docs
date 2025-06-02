@@ -13,15 +13,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: pull-request
-    uses: diillson/auto-pull-request@v1.0.1
+      uses: diillson/auto-pull-request@v1.0.1
       with:
         source_branch: "ga"                                 # If "", default: triggered branch
         destination_branch: "draft"                      # If blank, default: master
         pr_title: "Pulling ${{ github.ref }} into draft" # Title of pull request
-        pr_body: |                                        # Full markdown support, requires pr_title to be set
-          :crown: *An automated PR*
-
-_Created by [diillson/auto-pull-request](https://github.com/diillson/auto-pull-request)_
+        pr_body: "This is a sample PR"
         pr_label: "auto-pr"                               # Comma-separated list (no spaces)
         pr_draft: true                                    # Creates pull request as draft
         pr_allow_empty: true                              # Creates pull request even if there are no changes
