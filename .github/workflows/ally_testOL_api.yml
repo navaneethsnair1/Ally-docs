@@ -1,10 +1,7 @@
 name: Docs Ally Tests- OL API
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
+  workflow_dispatch:
  
 jobs:
   openliberty-api:
