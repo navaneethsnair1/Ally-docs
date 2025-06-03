@@ -1,10 +1,7 @@
 name: Docs Accessibility Tests
 
 on:
-  push:
-    branches:
-      - trail
-  pull_request:
+  workflow_dispatch:
  
 jobs:
   openliberty-api:
