@@ -5,20 +5,21 @@ on:
     types: [closed]
     branches:
       - staging
-      - main
   workflow_dispatch:    
 
 jobs:
-  pull-request:
+  create-pr:
+    if: github.event.pull_request.merged == true && github.event.pull_request.head.ref == 'GA'
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
+
     steps:
     - uses: actions/checkout@v3
     - name: pull-request
       uses: diillson/auto-pull-request@v1.0.1
       with:
-        source_branch: "GA*"                                 # If "", default: triggered branch
+        source_branch: "GA"                                 # If "", default: triggered branch
         destination_branch: "draft"                      # If blank, default: master
         pr_title: "Pulling ${{ github.ref }} into draft" # Title of pull request
         pr_body: "This is a sample PR"
