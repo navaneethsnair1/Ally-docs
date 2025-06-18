@@ -11,8 +11,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4  
     - name: Download Acrolinx CLI
+      env:
+        ACRO_USERNAME: ${{ secrets.ACRO_USERNAME }}
+        ACRO_PASSWORD: ${{ secrets.ACRO_PASSWORD }}
       run: |
-        curl -L -o githubhook-v4.2.6.jar https://download.acrolinx.com/api/deliverables/672c49a4-7270-6b67-06b8-f600142e4403/download/githubhook-v4.2.6.jar
+        curl -u "$ACRO_USERNAME:$ACRO_PASSWORD" \
+          -L -o githubhook-v4.2.6.jar \
+          https://download.acrolinx.com/api/deliverables/672c49a4-7270-6b67-06b8-f600142e4403/download/githubhook-v4.2.6.jar
         
     - name: Run on md file
       env:
