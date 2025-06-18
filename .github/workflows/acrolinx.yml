@@ -1,0 +1,34 @@
+name: Acrolinx testing 
+
+on:
+  workflow_dispatch:  
+
+jobs:
+  acrolinx-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4  
+    - name: Download Acrolinx CLI
+      run: |
+        curl -L -o githubhook-v4.2.6.jar https://download.acrolinx.com/api/deliverables/672c49a4-7270-6b67-06b8-f600142e4403/download/githubhook-v4.2.6.jar
+        
+    - name: Run on md file
+      env:
+        ACRO_USERNAME: ${{ secrets.ACRO_USERNAME }}
+        ACRO_PASSWORD: ${{ secrets.ACRO_PASSWORD }}
+      run: |
+        java -jar githubhook-v4.2.6.jar \
+          --url https://ibmid.acrolinx.cloud \
+          --username "$ACRO_USERNAME" \
+          --password "$ACRO_PASSWORD" \
+          --check "acroCheck.md" \
+          --output-format html,json \
+          --output-file ../acrolinx-results
+    - name: Upload report
+      uses: actions/upload-artifact@v4  
+      with:
+        name: report
+        path: acrolinx-results.*
+  
