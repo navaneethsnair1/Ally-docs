@@ -7,16 +7,22 @@ on:
   workflow_dispatch:
 
 jobs:
-  create-pr-on-push:
+  create_pr:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - name: Create PR to draft for release blogs
-        uses: peter-evans/create-pull-request@v7
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: "${{ github.ref_name }}"
-          base: draft
-          title: "Automatic PR from ${{ github.ref_name }} to draft"
-          body: "This PR is created as updates are made to release blog ${{ github.ref_name }}"
-          draft: true    
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create Pull Request using GitHub CLI
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          branch_name="${GITHUB_REF#refs/heads/}"
+          echo "Creating PR from $branch_name to draft"
+          gh pr create \
+            --head "$branch_name" \
+            --base "draft" \
+            --title "Automated PR: Merge $branch_name into draft" \
+            --body "This PR was created automatically by GitHub Actions to merge changes from $branch_name into draft." \
+            || echo "PR creation failed or PR already exists"
