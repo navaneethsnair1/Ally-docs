@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - '**-post'
-  workflow_dispatch:
 
 jobs:
   create_pr:
@@ -14,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create Pull Request using GitHub CLI
+      - name: Create Pull Request using GitHub CLI for release blogs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -23,6 +22,6 @@ jobs:
           gh pr create \
             --head "$branch_name" \
             --base "draft" \
-            --title "Automated PR: Merge $branch_name into draft" \
-            --body "This PR was created automatically by GitHub Actions to merge changes from $branch_name into draft." \
+            --title "Automated PR: Update $branch_name blog into draft" \
+            --body "This is an auto-generated PR by github actions to update changes from $branch_name into draft." \
             || echo "PR creation failed or PR already exists"
