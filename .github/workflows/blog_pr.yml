@@ -22,7 +22,7 @@ jobs:
           gh pr create \
             --head "$branch_name" \
             --base "draft" \
-            --title "Automated PR: Update $branch_name blog into draft" \
+            --title "Update $branch_name into draft(Automated)" \
             --body "This is an auto-generated PR by github actions to update changes from $branch_name into draft." \
             --reviewer "navaneethsnair1" \
             || echo "PR creation failed or PR already exists"
