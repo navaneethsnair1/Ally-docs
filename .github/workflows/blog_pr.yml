@@ -15,7 +15,7 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref_name }}
+          branch: "${{ github.ref_name }}"
           base: draft
           title: "Automatic PR from ${{ github.ref_name }} to draft"
           body: "This PR is created as updates are made to release blog ${{ github.ref_name }}"
