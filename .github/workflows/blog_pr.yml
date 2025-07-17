@@ -24,4 +24,5 @@ jobs:
             --base "draft" \
             --title "Automated PR: Update $branch_name blog into draft" \
             --body "This is an auto-generated PR by github actions to update changes from $branch_name into draft." \
+            --reviewer "navaneethsnair1" \
             || echo "PR creation failed or PR already exists"
