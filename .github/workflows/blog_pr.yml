@@ -1,37 +1,22 @@
-name: Create automatic PRs
+name: Create Automatic PR for release blogs
 
 on:
-  pull_request:
-    types: [closed]
+  push:
     branches:
-      - staging
-  workflow_dispatch:    
+      - '**-post'
+  workflow_dispatch:
 
 jobs:
-  create-pr:
-    if: |
-      github.event.pull_request.merged == true && 
-      (
-        startsWith(github.event.pull_request.head.ref, '25.') ||
-        endsWith(github.event.pull_request.head.ref, '-beta')
-      )  
+  create-pr-on-push:
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
-
     steps:
-    - uses: actions/checkout@v3
-    - name: pull-request
-      uses: diillson/auto-pull-request@v1.0.1
-      with:
-        source_branch: "${{ github.event.pull_request.head.ref }}"                                 # If "", default: triggered branch
-        destination_branch: "draft"                      # If blank, default: master
-        pr_title: "Pulling ${{ github.event.pull_request.head.ref }} updates into draft" # Title of pull request
-        pr_body: "This is a sample PR"
-        pr_label: "auto-pr"                               # Comma-separated list (no spaces)
-        pr_draft: true                                    # Creates pull request as draft
-        pr_allow_empty: true                              # Creates pull request even if there are no changes
-        github_token: ${{ secrets.GITHUB_TOKEN }}      # If blank, default: secrets.GITHUB_TOKEN
-
-
-      
+      - uses: actions/checkout@v4
+      - name: Create PR to draft for release blogs
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref_name }}
+          base: draft
+          title: "Automatic PR from ${{ github.ref_name }} to draft"
+          body: "This PR is created as updates are made to release blog ${{ github.ref_name }}"
+          draft: true    
