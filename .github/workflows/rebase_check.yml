@@ -55,8 +55,6 @@ jobs:
         with:
           script: |
             const rebasePossible = process.env.REBASE_POSSIBLE;
-            const owner = process.env.REPO_OWNER;
-            const repo = process.env.REPO_NAME;
             const prNumber = context.payload.pull_request.number;
 
             let msg = '';
@@ -67,8 +65,8 @@ jobs:
             }
 
             await github.rest.issues.createComment({
-              owner: owner,
-              repo: repo,
+              owner: context.repo.owner ,
+              repo: 'Ally-docs',
               issue_number: prNumber,
               body: msg
             });
