@@ -1,0 +1,40 @@
+name: Rebase Check
+
+on:
+  pull_request:
+    branches:
+      - staging
+      - draft
+
+jobs:
+  rebase-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0 # needed for rebase
+
+      - name: Set up Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch target branch
+        run: git fetch origin ${{ github.base_ref }}
+
+      - name: Attempt rebase onto target branch
+        run: |
+          git rebase origin/${{ github.base_ref }}
+
+      - name: Check for rebase conflicts
+        run: |
+          if [ -d ".git/rebase-merge" ] || [ -d ".git/rebase-apply" ]; then
+            echo "Rebase conflicts detected. Please rebase manually."
+            exit 1
+          fi
+
+      - name: Push rebased branch (optional)
+        if: success()
+        run: git push --force-with-lease origin HEAD:${{ github.head_ref }}
