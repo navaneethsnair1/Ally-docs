@@ -37,4 +37,4 @@ jobs:
 
       - name: Push rebased branch (optional)
         if: success()
-        run: git push --force-with-lease origin HEAD:${{ github.head_ref }}
+        run: git push --force origin HEAD:${{ github.head_ref }}
