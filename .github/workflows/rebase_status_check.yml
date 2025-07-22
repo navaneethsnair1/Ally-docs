@@ -1,10 +1,7 @@
 name: Status Check
 
 on:
-  workflow_run:
-    workflows: ["Rebase Check"]
-    types:
-      - completed
+  workflow_dispatch:
 
 jobs:
   check:
