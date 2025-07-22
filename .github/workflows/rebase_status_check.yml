@@ -1,0 +1,22 @@
+name: Status Check
+
+on:
+  workflow_run:
+    workflows: ["Rebase Check"]
+    types:
+      - completed
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: Checkout updated branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_branch }}
+
+      - name: Example Status Check
+        run: |
+          echo "✅ Running status checks..."
+          # Insert build/test/lint steps here as needed
