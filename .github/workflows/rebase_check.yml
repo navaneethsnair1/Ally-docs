@@ -61,9 +61,9 @@ jobs:
 
             let msg = '';
             if (rebasePossible === 'true') {
-              msg = 'This branch can be rebased cleanly onto its base branch.';
+              msg = 'This branch (${{ github.head_ref }}) can be rebased cleanly onto ${{ github.base_ref }}.';
             } else {
-              msg = 'This branch **cannot** be rebased cleanly. Please resolve merge conflicts.';
+              msg = 'This branch (${{ github.head_ref }}) **cannot** be rebased cleanly. Please resolve merge conflicts.';
             }
 
             await github.rest.issues.createComment({
