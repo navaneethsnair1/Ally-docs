@@ -49,10 +49,8 @@ jobs:
           git fetch origin $BASE_BRANCH
           if git rebase --no-commit --no-ff origin/$BASE_BRANCH; then
             echo "REBASE_POSSIBLE=true" >> $GITHUB_ENV
-            git rebase --abort
           else
             echo "REBASE_POSSIBLE=false" >> $GITHUB_ENV
-            git rebase --abort
           fi
 
       - name: Comment rebase possibility
