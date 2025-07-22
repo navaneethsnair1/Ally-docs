@@ -13,15 +13,14 @@ jobs:
       - name: Checkout PR branch
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Fetch full history to allow rebase checks
-
+          fetch-depth: 0  
       - name: Set variables
         id: vars
         run: |
           echo "BASE_BRANCH=${{ github.event.pull_request.base.ref }}" >> $GITHUB_ENV
           echo "FEATURE_BRANCH=${{ github.event.pull_request.head.ref }}" >> $GITHUB_ENV
 
-      - name: Post comparison link if base is staging or main
+      - name: Post '..' comparison link to verify changes are identical to normal comparison
         uses: actions/github-script@v7
         with:
           script: |
@@ -34,7 +33,7 @@ jobs:
                 owner: context.repo.owner,
                 repo: 'Ally-docs',
                 issue_number: context.payload.pull_request.number,
-                body: `**Compare your changes here:**\n${compareUrl}\nEnsure the changes are identical to the desired changes. If not, please rebase ${head} onto ${base}`
+                body: `**Compare your changes here:**\n${compareUrl}\nEnsure the changes are identical to the desired changes. If not, please rebase '${head}' onto '${base}'`
               });
             }
 
@@ -62,9 +61,9 @@ jobs:
 
             let msg = '';
             if (rebasePossible === 'true') {
-              msg = 'This PR can be rebased cleanly onto its base branch.';
+              msg = 'This branch can be rebased cleanly onto its base branch.';
             } else {
-              msg = 'This PR **cannot** be rebased cleanly. Please resolve conflicts.';
+              msg = 'This branch **cannot** be rebased cleanly. Please resolve merge conflicts.';
             }
 
             await github.rest.issues.createComment({
