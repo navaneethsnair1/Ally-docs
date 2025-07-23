@@ -53,7 +53,10 @@ jobs:
               issue_number: context.payload.pull_request.number,
               body: 'Rebase not required. You are good to merge the branch.'
             })
-            exit 0
+            
+      - name: Exit workflow if rebase is not required
+        if: steps.behind_check.outputs.needs_rebase == 'false'
+        run: exit 0
             
       - name: Attempt rebase onto target branch
         run: |
