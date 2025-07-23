@@ -21,9 +21,16 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Set up PAT authentication
+        env:
+          PAT: ${{ secrets.Rebase_PAT }}
+        run: |
+          git remote set-url origin https://${PAT}@github.com/${{ github.repository }}.git  
+    
+
       - name: Fetch target branch
         run: git fetch origin ${{ github.base_ref }}
-
+        
       - name: Attempt rebase onto target branch
         run: |
           git rebase origin/${{ github.base_ref }}
