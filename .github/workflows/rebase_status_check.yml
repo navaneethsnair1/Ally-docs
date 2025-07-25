@@ -3,11 +3,15 @@ name: Run Prohibited terms PR checker
 on:
   pull_request:
     branches:
-      - draft
-      - staging
+      - main
+  workflow_run:
+    workflows: ["Rebase Check"]  
+    types:
+      - completed    
 
 jobs:
-  check:
+  check-files:
+    if: ${{ github.event_name == 'pull_request' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout updated branch
