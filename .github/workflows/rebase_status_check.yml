@@ -3,27 +3,17 @@ name: Run Prohibited terms PR checker
 on:
   pull_request:
     branches:
+      - staging
       - main
-  workflow_run:
-    workflows: ["Rebase Check"]  
-    types:
-      - completed    
 
 jobs:
   check-files:
-    if: ${{ github.event_name == 'pull_request' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout updated branch
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.workflow_run.head_branch }}
-
-      - name: Set up PAT authentication
-        env:
-          PAT: ${{ secrets.Rebase_PAT }}
-        run: |
-          git remote set-url origin https://${PAT}@github.com/${{ github.repository }}.git      
 
       - name: Example Status Check
         run: |
