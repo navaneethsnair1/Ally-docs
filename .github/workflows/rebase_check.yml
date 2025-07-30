@@ -2,6 +2,7 @@ name: Rebase Check
 
 on:
   pull_request:
+    types: [opened]
     branches:
       - staging
       - draft
@@ -10,60 +11,27 @@ jobs:
   rebase-check:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout feature branch
+      - name: Checkout PR branch
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
-          fetch-depth: 0 # needed for rebase
-
-      - name: Set up Git
+          fetch-depth: 0  
+      - name: Set variables
+        id: vars
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-      - name: Set up PAT authentication
-        env:
-          PAT: ${{ secrets.Rebase_PAT }}
-        run: |
-          git remote set-url origin https://${PAT}@github.com/${{ github.repository }}.git  
-    
-      - name: Fetch target branch
-        run: git fetch origin ${{ github.base_ref }}
-
-      - name: Check if feature branch is behind base branch
-        id: behind_check
-        run: |
-          # Check if staging/draft has commits not in feature branch
-          COMMITS_BEHIND=$(git rev-list --count HEAD..origin/${{ github.base_ref }})
-          echo "Commits behind: $COMMITS_BEHIND"
-          if [ "$COMMITS_BEHIND" -gt 0 ]; then
-            echo "needs_rebase=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "needs_rebase=false" >> "$GITHUB_OUTPUT"
-          fi  
-      - name: Comment that rebase is not required
-        if: steps.behind_check.outputs.needs_rebase == 'false'
+          echo "BASE_BRANCH=${{ github.event.pull_request.base.ref }}" >> $GITHUB_ENV
+          echo "FEATURE_BRANCH=${{ github.event.pull_request.head.ref }}" >> $GITHUB_ENV
+      - name: Post '..' comparison link to verify changes are identical to normal comparison
         uses: actions/github-script@v7
         with:
           script: |
-            github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.payload.pull_request.number,
-              body: 'Rebase not required. You are good to merge the branch.'
-            })
-            
-      - name: Attempt rebase onto target branch
-        if: steps.behind_check.outputs.needs_rebase == 'true'
-        run: |
-          git rebase origin/${{ github.base_ref }}
-          
-      - name: Check for rebase conflicts
-        if: steps.behind_check.outputs.needs_rebase == 'true'
-        run: |
-          if [ -d ".git/rebase-merge" ] || [ -d ".git/rebase-apply" ]; then
-            echo "Rebase conflicts detected. Please rebase manually."
-            exit 1
-          fi
-      - name: Push rebased branch 
-        if: success() && steps.behind_check.outputs.needs_rebase == 'true'
-        run: git push --force-with-lease origin HEAD:${{ github.head_ref }}
+            const base = process.env.BASE_BRANCH;
+            const head = process.env.FEATURE_BRANCH;
+            if (base === 'staging' || base === 'main') {
+              const compareUrl = `https://github.com/navaneethsnair1/Ally-docs/compare/${base}..${head}`;
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: 'Ally-docs',
+                issue_number: context.payload.pull_request.number,
+                body: `**Compare your changes here:**\n${compareUrl}\nEnsure the changes are identical to the desired changes. If not, please rebase '${head}' onto '${base}'`
+              });
+            }
