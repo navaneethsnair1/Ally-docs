@@ -20,9 +20,9 @@ jobs:
               repo: 'Ally-docs',
               issue_number: context.payload.pull_request.number,
               body: |
-            **Compare your changes here:**\n${compareUrl}
-
-            Ensure the changes are identical to the desired changes. 
-            If not, please resolve merge conflicts (if any) and rebase '${{ github.head_ref }}' onto '${{ github.base_ref }}'`
+                **Compare your changes here:**\n${compareUrl}
+    
+                Ensure the changes are identical to the desired changes. 
+                If not, please resolve merge conflicts (if any) and rebase '${{ github.head_ref }}' onto '${{ github.base_ref }}'`
             });
 
