@@ -41,7 +41,7 @@ jobs:
           import fs from 'fs';
           import path from 'path';
 
-          const resultsDir = '/__w/Ally-docs/Ally-docs/cypress-docs/results';
+          const resultsDir = '/__w/Ally-docs/Ally-docs/cypress-docs/results/OL.io';
           const files = fs.readdirSync(resultsDir).filter(f => f.endsWith('.json'));
 
           const violatingFiles = [];
