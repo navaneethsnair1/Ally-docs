@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  pull_request:
+  workflow_dispatch:
  
 jobs:
   openliberty-api:
@@ -29,14 +29,58 @@ jobs:
       - name: Debug - List files
         run: ls -R /__w/Ally-docs/Ally-docs/cypress-docs/results
 
-      - name: Debug - Cypress Logs
-        run: cat /__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json || echo "No summary file found"
-
-      - name: Upload Summary Results
-        if: success() 
-        uses: actions/upload-artifact@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          name: Summary File
-          path: /__w/Ally-docs/Ally-docs/cypress-docs/results/summary.json
-          if-no-files-found: warn      
-          include-hidden-files: true 
+          node-version: 20
+
+      - name: Check Accessibility Violations
+        id: check_violations
+        run: |
+          node <<'EOF'
+          import fs from 'fs';
+          import path from 'path';
+
+          const resultsDir = '/__w/Ally-docs/Ally-docs/cypress-docs/results';
+          const files = fs.readdirSync(resultsDir).filter(f => f.endsWith('.json'));
+
+          const violatingFiles = [];
+
+          for (const file of files) {
+            const filePath = path.join(resultsDir, file);
+            try {
+              const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+              const violations = data?.summary?.counts?.violation ?? 0;
+              if (violations > 0) violatingFiles.push(file);
+            } catch (err) {
+              console.error(`Error reading ${file}:`, err);
+            }
+          }
+
+          if (violatingFiles.length > 0) {
+            console.log(`::set-output name=violation_files::${violatingFiles.join(', ')}`);
+            console.log('Accessibility violations found in:', violatingFiles);
+          } else {
+            console.log('No accessibility violations found.');
+          }
+          EOF
+
+      - name: Generate issue body
+        if: steps.check_violations.outputs.violation_files != ''
+        run: |
+          echo "### ⚠️ Accessibility Violations Detected" > issue.md
+          echo "" >> issue.md
+          echo "The following result files contain accessibility violations:" >> issue.md
+          echo "${{ steps.check_violations.outputs.violation_files }}" >> issue.md
+          echo "" >> issue.md
+          echo "_This issue was automatically created by the accessibility test workflow._" >> issue.md
+    
+
+      - name: Create GitHub Issue if Violations Exist
+        if: steps.check_violations.outputs.violation_files != ''
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Accessibility violations detected
+          content-filepath: issue.md
+          labels: accessibility, automated
+
