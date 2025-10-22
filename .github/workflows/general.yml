@@ -68,7 +68,7 @@ jobs:
       - name: Generate issue body
         if: steps.check_violations.outputs.violation_files != ''
         run: |
-          echo "### ⚠️ Accessibility Violations Detected" > issue.md
+          echo "### Accessibility Violations Detected" > issue.md
           echo "" >> issue.md
           echo "The following result files contain accessibility violations:" >> issue.md
           echo "${{ steps.check_violations.outputs.violation_files }}" >> issue.md
@@ -82,5 +82,5 @@ jobs:
         with:
           title: Accessibility violations detected
           content-filepath: issue.md
-          labels: accessibility, automated
+          labels: a11y, automated
 
