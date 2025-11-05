@@ -73,8 +73,8 @@ jobs:
 
             // Store output for next steps
             const fileNamesWithoutExt = violatingFiles.map(f => path.basename(f, '.json')).join(', ');
-            console.log(`::set-output name=violations::${fileNamesWithoutExt}`);
-            console.log(`::set-output name=zip_file::${zipName}`);
+            echo "violations=${fileNamesWithoutExt}" >> "$GITHUB_OUTPUT"
+            echo "zip_file=${zipName}" >> "$GITHUB_OUTPUT"
             console.log('Violations found in:', fileNamesWithoutExt);
           } else {
             console.log('No accessibility violations found.');
