@@ -14,11 +14,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Install dependencies
+        run: |
+          cd /__w/Ally-docs/Ally-docs/cypress-docs
+          npm ci  
+
       - name: Cleanup previous results
         run: rm -rf /__w/Ally-docs/Ally-docs/cypress-docs/results/*
 
       - name: Cleanup Cypress Cache
-        run: rm -rf ~/.cache/Cypress
+        run: rm -rf ~/.cache/Cypress  
 
       - name: Run first test file
         run: |
@@ -26,6 +31,7 @@ jobs:
           --env JDK_VERSION="1.8.0_311" \
           --config-file /__w/Ally-docs/Ally-docs/cypress-docs/cypress.config.js \
           --spec "/__w/Ally-docs/Ally-docs/cypress-docs/cypress/e2e/general_tests.cy.js" 
+          
       - name: Debug - List files
         run: ls -R /__w/Ally-docs/Ally-docs/cypress-docs/results
 
